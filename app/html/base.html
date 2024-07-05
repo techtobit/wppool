@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../Javascript/main.js" defer></script>
 	<script>
 		tailwind.config = {
 			theme: {
@@ -37,7 +38,10 @@
 					<li id="download_btn"
 						class="w-[182px] h-[42px] text-[12px] flex justify-center items-center font-normal border border-1 border-black rounded-full">
 						Download the 2024 Report</li>
-					<img id="open_togol_menu" class="pl-[15px]" src="../assets/icons/menuIcon.png" />
+					<button  id="open_toggol_menu" >
+						<img class="pl-[15px]" src="../assets/icons/menuIcon.png" />
+					</button>
+					
 				</ul>
 			</div>
 			<div id="menuList" class="w-[340px] h-[500px] z-50 absolute bg-white right-0 top-0 mr-1 mt-1 rounded-[18px]">
@@ -51,7 +55,9 @@
 						<li id="download_btn"
 							class="w-[182px] h-[42px] text-[12px] flex justify-center items-center font-normal border-0 text-white rounded-full bg-blue">
 							Download the 2024 Report</li>
-						<img id="open_togol_menu" class="pl-[15px]" src="../assets/icons/close.png" />
+						<button id="close_toggol_menu">
+							<img  class="pl-[15px]" src="../assets/icons/close.png" />
+						</button>
 					</ul>
 				</div>
 

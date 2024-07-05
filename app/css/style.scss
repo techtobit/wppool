@@ -4,9 +4,13 @@
 
 
 #menuList{
+	display: none;
 	ul{
 		li{
 			line-height: 40px;
 		}
 	}
+	&.visible {
+    display: block;
+  }
 }

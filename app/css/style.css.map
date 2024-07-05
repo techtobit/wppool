@@ -1,1 +1,1 @@
-{"version":3,"sources":["scrollBar.scss","style.css","colors.scss","style.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;ACDF;;ADIA;EACE,mBEJO;ADGT;;ADIA;EACE,mBEPW;EFQX,mBAAA;ACDF;;ADIA;EACE,mBEhBO;ADeT;;AERE;EACC,iBAAA;AFWH","file":"style.css"}
+{"version":3,"sources":["scrollBar.scss","style.css","colors.scss","style.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;ACDF;;ADIA;EACE,mBEJO;ADGT;;ADIA;EACE,mBEPW;EFQX,mBAAA;ACDF;;ADIA;EACE,mBEhBO;ADeT;;AEVA;EACC,aAAA;AFaD;AEXE;EACC,iBAAA;AFaH;AEVC;EACG,cAAA;AFYJ","file":"style.css"}

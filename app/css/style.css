@@ -15,6 +15,12 @@
   background: #2042B6;
 }
 
+#menuList {
+  display: none;
+}
 #menuList ul li {
   line-height: 40px;
+}
+#menuList.visible {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
