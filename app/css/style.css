@@ -33,6 +33,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NeueHaasUnicaW1G";
+  src: url("../assets/fonts/NeueHaas/Neue-Haas-Unica-W1G.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 #menuList {
   display: none;
 }
@@ -43,9 +50,21 @@
   display: block;
 }
 
-#hero h1 {
+#hero .hero_title h1 {
   font-family: NantesRegular;
 }
-#hero p {
+#hero .hero_title p {
   font-family: MessinaSansLight;
+}
+#hero .hero_summery p {
+  font-family: NantesRegular;
+  font-size: 36px;
+  color: #FFFFFF;
+  padding-top: 25px;
+}
+#hero .hero_summery span {
+  font-family: NeueHaasUnicaW1G;
+  font-size: 16px;
+  color: #CDCDCD;
+  margin-top: -2px;
 }/*# sourceMappingURL=style.css.map */
