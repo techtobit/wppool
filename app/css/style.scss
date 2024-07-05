@@ -1,26 +1,6 @@
-$cBlue : #2042B6;
-$cWhite: #FFFFFF;
-$cBlack: #191618;
-$cLight: #D9D9D9;
-$cSemiGreen: #AFCD80;
+@import 'colors';
+@import 'scrollBar';
 
-
-::-webkit-scrollbar {
-  width: 8px; 
-}
-
-::-webkit-scrollbar-track {
-  background: $cLight; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: $cBlue; 
-  border-radius: 20px; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: $cSemiGreen;
-}
 
 
 #menuList{
