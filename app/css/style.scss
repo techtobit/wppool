@@ -1,7 +1,24 @@
 @import 'colors';
 @import 'scrollBar';
 
-
+@font-face {
+  font-family: 'NantesRegular';
+  src: url('../assets/fonts/Nantes/Nantes-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MessinaSansRegular';
+  src: url('../assets/fonts/MessinaSans/MessinaSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MessinaSansLight';
+  src: url('../assets/fonts/MessinaSans/MessinaSans-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 #menuList{
 	display: none;
@@ -13,6 +30,15 @@
 	&.visible {
     display: block;
   }
+}
+
+#hero{
+	h1{
+		font-family: NantesRegular;
+	}
+	p{
+		font-family: MessinaSansLight;
+	}
 }
 
 
