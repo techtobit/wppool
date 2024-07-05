@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script src="../Javascript/main.js" defer></script>
+	<!-- <script src="../Javascript/main.js" defer></script> -->
 	<script>
 		tailwind.config = {
 			theme: {
@@ -30,24 +30,26 @@
 
 <body class="bg-light">
 	<!-- hero section  -->
-	<nav class="flex px-[45px] pt-[46px] fixed top-0 left-0 right-0 ">
+	<nav class="flex px-[45px] pt-[20px] fixed top-0 left-0 right-0 ">
 		<div id="navbar" class="h-[58px] px-[20px] w-full flex justify-between items-center rounded-md">
-			<img src="../assets/logo.png" />
+			<img id="logo_white" src="../assets/logo.png" />
+			<img id="logo_black" src="../assets/icons/logoBlack.png" />
 			<ul class="flex items-center gap-[10px]">
 				<li id="share_btn"
 					class=" flex justify-center items-center w-[42px] h-[42px] rounded-full border border-1 border-black">
-					<img class="w-[10px] h-[10px]" src="../assets/icons/shareIcon.png" />
+					<img class="w-[10px] h-[10px] pointer" src="../assets/icons/shareIcon.png" />
 				</li>
 				<li id="download_btn"
 					class="w-[182px] h-[42px] text-[12px] flex justify-center items-center font-normal border border-1 border-black rounded-full">
-					Download the 2024 Report</li>
+					Download the 2024 Report
+				</li>
 				<button id="open_toggol_menu">
 					<img class="pl-[15px]" src="../assets/icons/menuIcon.png" />
 				</button>
 
 			</ul>
 		</div>
-		<div id="menuList" class="w-[340px] h-[500px] z-50 absolute bg-white right-0 top-0 mr-1 mt-1 rounded-[18px]">
+		<div id="menuList" class="w-[340px] h-[500px] z-50 absolute bg-white-500 right-0 top-0 mr-1 mt-1 rounded-[18px]">
 
 			<div class="flex justify-center pt-[48px]">
 				<ul class="flex items-center gap-[10px]">
@@ -56,7 +58,7 @@
 						<img class="w-[10px] h-[10px]" src="../assets/icons/shareIcon.png" />
 					</li>
 					<li id="download_btn"
-						class="w-[182px] h-[42px] text-[12px] flex justify-center items-center font-normal border-0 text-white rounded-full bg-blue">
+						class="w-[182px] h-[42px] text-[12px] flex justify-center items-center font-normal border-0 text-white-500 rounded-full bg-blue">
 						Download the 2024 Report</li>
 					<button id="close_toggol_menu">
 						<img class="pl-[15px]" src="../assets/icons/close.png" />
@@ -78,6 +80,9 @@
 			</ul>
 		</div>
 	</nav>
+	<section id="hero" class="section bg-blue h-screen w-full ">
+		<ul>Wppool</ul>
+	</section>
 	<section id="wppool_index" class="section bg-white-500 h-screen w-full ">
 		<ul>Wppool</ul>
 	</section>
@@ -87,6 +92,9 @@
 	<section id="companiesa" class="section h-screen w-full ">
 		<ul>Wppool</ul>
 	</section>
+
+
+	<script src="../Javascript/main.js" ></script>
 </body>
 
 </html>
