@@ -10,7 +10,9 @@
       theme: {
         extend: {
           colors: {
-            primary:'#2042B6',
+            blue:'#2042B6',
+						light: '#D9D9D9',
+						black: '#191618',
           }
         }
       }
@@ -18,9 +20,20 @@
   </script>
 	<title>Wppool</title>
 </head>
-<body>
+<body class="bg-light">
 	<!-- hero section  -->
-	<div class="here_section w-full bg-[#2042B6]">
+	<div class="here_section h-screen w-full bg-blue">
+		<nav class="flex px-14 pt-6  ">
+			<div class="nav_bar h-14  w-full flex justify-between items-center">
+				<img src="../assets/logo.png" />
+				<ul class="flex">
+					<li>share</li>
+					<li class="text-3 rounded rounded-full">Download the 2024 Report</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="here_section h-screen w-full bg-black">
 		<nav>
 			<ul>Wppool</ul>
 		</nav>
