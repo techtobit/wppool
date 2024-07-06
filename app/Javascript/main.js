@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             logoBlack.style.display = 'block';
 
             break;
-          case 'companies':
+          case 'future_istings':
             navbar.style.backgroundColor = '#F3F3F3';
             logoWhite.style.display = 'none'
             logoBlack.style.display = 'block'

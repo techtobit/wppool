@@ -118,6 +118,13 @@ body {
   background-color: #F3F3F3;
 }
 
+#future_listings h1 {
+  font-family: NantesRegular;
+}
+#future_listings p {
+  font-family: MessinaSansLight;
+}
+
 @media only screen and (max-width: 768px) {
   #hero #hero_dot_blob {
     width: 350px;

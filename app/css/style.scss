@@ -55,7 +55,6 @@ body {
 }
 
 // seciton 3 - companies
-
 #wppool_index {
 	.section_header {
 
@@ -74,7 +73,6 @@ body {
 
 
 }
-
 #companyTable{
 	width: 100%;
 	border-collapse: separate;
@@ -107,6 +105,16 @@ body {
 		background-color: $cGrayBright;
 	}
 
+}
+
+//section 04 - future lsiting
+#future_listings{
+	h1{
+		font-family: NantesRegular;
+	}
+	p{
+		font-family: MessinaSansLight;
+	}
 }
 
 
