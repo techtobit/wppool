@@ -3,6 +3,13 @@
 @import 'font';
 
 
+body{
+	width: 100%;
+	height: 100vh;
+}
+
+// section 00- nav bar toggle menu 
+
 #menuList{
 	display: none;
 	ul{
@@ -14,6 +21,8 @@
     display: block;
   }
 }
+
+// section 01 - Hero Section 
 
 #hero{
 	.hero_title{
@@ -41,18 +50,33 @@
 	}
 }
 
+// seciton 3 - companies
+
+#wppool_index{
+	.section_header{
+		p,
+		input{
+			font-family: NantesRegular;
+		}
+
+		#search{
+			background-image: url('../assets/icons/search.png');
+			background-repeat: no-repeat;
+			background-position: 20px center;
+			padding-left: 50px; 
+		}
+	}
+}
 
 
 // tablet 
 @media only screen and (max-width: 768px){
 
 	#hero{
-
 		#hero_dot_blob{
 			width: 350px;
 			height: 350px;	
 		}
-
 		.hero_summery{
 			text-align: center;
 			p{
@@ -61,7 +85,6 @@
 				width: 190px;
 				height: 60px;
 				overflow: hidden;
-	
 				span{
 					font-size: 12px;
 					margin-top: 0px;
@@ -83,9 +106,7 @@
 			width: 100px;
 		}
 	}
-
 	#hero{
-
 		#hero_dot_blob{
 			width: 300px;
 			height: 300px;	
@@ -98,7 +119,6 @@
 				width: 80px;
 				height: 60px;
 				overflow: hidden;
-	
 				span{
 					font-size: 12px;
 					margin-top: 0px;
