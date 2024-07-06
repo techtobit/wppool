@@ -44,7 +44,12 @@
 
 @media (max-width: 425px){
 
-	
+	#navbar{
+		#logo_white,
+		#logo_black{
+			width: 100px;
+		}
+	}
 
 	#hero{
 		.hero_summery{

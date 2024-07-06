@@ -70,6 +70,10 @@
 }
 
 @media (max-width: 425px) {
+  #navbar #logo_white,
+  #navbar #logo_black {
+    width: 100px;
+  }
   #hero .hero_summery {
     text-align: center;
   }
