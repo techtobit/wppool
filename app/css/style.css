@@ -79,9 +79,13 @@
   }
   #hero .hero_summery p {
     font-size: 25px;
+    padding-top: 0px;
     width: 90px;
+    height: 60px;
+    overflow: hidden;
   }
   #hero .hero_summery p span {
     font-size: 12px;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=style.css.map */
