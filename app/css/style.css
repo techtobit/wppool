@@ -74,6 +74,10 @@
   #navbar #logo_black {
     width: 100px;
   }
+  #hero #hero_dot_blob {
+    width: 300px;
+    height: 300px;
+  }
   #hero .hero_summery {
     text-align: center;
   }
@@ -87,5 +91,11 @@
   #hero .hero_summery p span {
     font-size: 12px;
     margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #hero #hero_dot_blob {
+    width: 350px;
+    height: 350px;
   }
 }/*# sourceMappingURL=style.css.map */
