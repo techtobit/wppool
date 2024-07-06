@@ -137,6 +137,22 @@ body {
     font-size: 12px;
     margin-top: 0px;
   }
+  #companyTable {
+    overflow: visible;
+  }
+  #companyTable thead tr {
+    text-align: left;
+    font-size: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  #companyTable tr {
+    font-size: 10px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 19.2px;
+  }
 }
 @media (max-width: 425px) {
   #navbar #logo_white,
@@ -160,5 +176,21 @@ body {
   #hero .hero_summery p span {
     font-size: 12px;
     margin-top: 0px;
+  }
+  #companyTable {
+    overflow: visible;
+  }
+  #companyTable thead tr {
+    text-align: left;
+    font-size: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  #companyTable tr {
+    font-size: 10px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 19.2px;
   }
 }/*# sourceMappingURL=style.css.map */

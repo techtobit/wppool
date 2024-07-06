@@ -73,41 +73,6 @@ body {
 	}
 
 
-	// table {
-	// 	width: 1200px;
-	// 	height: 400px;
-	// 	border-collapse: separate;
-  //   border-spacing: 0 10px;
-	// 	overflow-y: visible;
-	// 	thead tr {
-	// 		text-align: left;
-
-	// 		th {
-	// 			font-family: NantesRegular;
-	// 			font-weight: 200;
-	// 		}
-
-	// 		th:first-child {
-	// 			font-weight: bold;
-	// 			// width: 20%;
-	// 			font-family: MessinaSansBold;
-	// 		}
-	// 	}
-
-	// 	tr {
-	// 			font-family: NantesRegular;
-	// 			font-size: 16px;
-	// 			height: 40px;
-	// 			border-radius: 50px;
-	// 			line-height: 19.2px;
-	// 		}
-		
-	// 	tbody tr:nth-child(odd) {
-	// 		background-color: $cGrayBright;
-	// 	}
-	// }
-
-
 }
 
 #companyTable{
@@ -172,6 +137,27 @@ body {
 		}
 
 	}
+
+
+	#companyTable{
+		overflow: visible;
+		thead tr {
+			text-align: left;
+			font-size: 10px;
+			position: sticky;
+			top: 0;
+			z-index: 1; 
+	
+		}
+	
+		tr {
+				font-size: 10px;
+				height: 40px;
+				border-radius: 50px;
+				line-height: 19.2px;
+			}
+	}
+
 }
 
 
@@ -209,6 +195,29 @@ body {
 				}
 			}
 		}
+	}
+
+
+
+	///
+	
+	#companyTable{
+		overflow: visible;
+		thead tr {
+			text-align: left;
+			font-size: 8px;
+			position: sticky;
+			top: 0;
+			z-index: 1; 
+	
+		}
+	
+		tr {
+				font-size: 10px;
+				height: 40px;
+				border-radius: 50px;
+				line-height: 19.2px;
+			}
 	}
 
 }
