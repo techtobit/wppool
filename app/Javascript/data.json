@@ -1,0 +1,112 @@
+[
+	{
+			"Company": "Adyen",
+			"Ticker": "AFRM",
+			"Vertical": "Payments",
+			"Price": "$17.15",
+			"Market Cap ($B)": "$50.5",
+			"Revenue Growth": "49.0%",
+			"Gross Margin": "15.8%",
+			"EV/Revenue": "6.3",
+			"YTD Performance": "24.3%"
+	},
+	{
+			"Company": "Affirm",
+			"Ticker": "AFRM",
+			"Vertical": "Lending",
+			"Price": "$16.12",
+			"Market Cap ($B)": "$4.7",
+			"Revenue Growth": "32.0%",
+			"Gross Margin": "48.7%",
+			"EV/Revenue": "4.9",
+			"YTD Performance": "77.1%"
+	},
+	{
+			"Company": "Alkami Technology",
+			"Ticker": "ALKT",
+			"Vertical": "B2B SaaS",
+			"Price": "$16.27",
+			"Market Cap ($B)": "$1.5",
+			"Revenue Growth": "34.0%",
+			"Gross Margin": "53.0%",
+			"EV/Revenue": "7.0",
+			"YTD Performance": "10.0%"
+	},
+	{
+			"Company": "AvidXchange",
+			"Ticker": "AVDX",
+			"Vertical": "Payments",
+			"Price": "$10.21",
+			"Market Cap ($B)": "$2.0",
+			"Revenue Growth": "27.0%",
+			"Gross Margin": "61.5%",
+			"EV/Revenue": "6.0",
+			"YTD Performance": "10.5%"
+	},
+	{
+			"Company": "Bakkt Holdings",
+			"Ticker": "BKKT",
+			"Vertical": "Wealth",
+			"Price": "$1.32",
+			"Market Cap ($B)": "$0.1",
+			"Revenue Growth": "38.0%",
+			"Gross Margin": "--",
+			"EV/Revenue": "0.4",
+			"YTD Performance": "13.8%"
+	},
+	{
+			"Company": "Virtu Financial Inc",
+			"Ticker": "VIRT",
+			"Vertical": "Wealth",
+			"Price": "$17.00",
+			"Market Cap ($B)": "$3.1",
+			"Revenue Growth": "-22.0%",
+			"Gross Margin": "38.2%",
+			"EV/Revenue": "2.6",
+			"YTD Performance": "-17.8%"
+	},
+	{
+			"Company": "Adyen",
+			"Ticker": "AFRM",
+			"Vertical": "Payments",
+			"Price": "$17.15",
+			"Market Cap ($B)": "$50.5",
+			"Revenue Growth": "49.0%",
+			"Gross Margin": "15.8%",
+			"EV/Revenue": "6.3",
+			"YTD Performance": "24.3%"
+	},
+	{
+			"Company": "Affirm",
+			"Ticker": "AFRM",
+			"Vertical": "Lending",
+			"Price": "$16.12",
+			"Market Cap ($B)": "$4.7",
+			"Revenue Growth": "32.0%",
+			"Gross Margin": "48.7%",
+			"EV/Revenue": "4.9",
+			"YTD Performance": "77.1%"
+	},
+	{
+			"Company": "Alkami Technology",
+			"Ticker": "ALKT",
+			"Vertical": "B2B SaaS",
+			"Price": "$16.27",
+			"Market Cap ($B)": "$1.5",
+			"Revenue Growth": "34.0%",
+			"Gross Margin": "53.0%",
+			"EV/Revenue": "7.0",
+			"YTD Performance": "10.0%"
+	},
+	{
+			"Company": "AvidXchange",
+			"Ticker": "AVDX",
+			"Vertical": "Payments",
+			"Price": "$10.21",
+			"Market Cap ($B)": "$2.0",
+			"Revenue Growth": "27.0%",
+			"Gross Margin": "61.5%",
+			"EV/Revenue": "6.0",
+			"YTD Performance": "10.5%"
+	}
+]

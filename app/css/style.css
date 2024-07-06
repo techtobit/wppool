@@ -28,6 +28,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "MessinaSansBold";
+  src: url("../assets/fonts/MessinaSans/MessinaSans-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "MessinaSansLight";
   src: url("../assets/fonts/MessinaSans/MessinaSans-Light.woff2") format("woff2");
   font-weight: normal;
@@ -42,7 +48,6 @@
 }
 body {
   width: 100%;
-  height: 100vh;
 }
 
 #menuList {
@@ -83,6 +88,34 @@ body {
   background-repeat: no-repeat;
   background-position: 20px center;
   padding-left: 50px;
+}
+
+#companyTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  overflow-y: visible;
+}
+#companyTable thead tr {
+  text-align: left;
+}
+#companyTable thead tr th {
+  font-family: NantesRegular;
+  font-weight: 200;
+}
+#companyTable thead tr th:first-child {
+  font-weight: bold;
+  font-family: MessinaSansBold;
+}
+#companyTable tr {
+  font-family: NantesRegular;
+  font-size: 16px;
+  height: 40px;
+  border-radius: 50px;
+  line-height: 19.2px;
+}
+#companyTable tbody tr:nth-child(odd) {
+  background-color: #F3F3F3;
 }
 
 @media only screen and (max-width: 768px) {

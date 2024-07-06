@@ -11,6 +11,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "MessinaSansBold";
+  src: url("../assets/fonts/MessinaSans/MessinaSans-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "MessinaSansLight";
   src: url("../assets/fonts/MessinaSans/MessinaSans-Light.woff2") format("woff2");
   font-weight: normal;
