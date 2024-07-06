@@ -62,9 +62,22 @@
   color: #FFFFFF;
   padding-top: 25px;
 }
-#hero .hero_summery span {
+#hero .hero_summery p span {
   font-family: NeueHaasUnicaW1G;
   font-size: 16px;
   color: #CDCDCD;
   margin-top: -2px;
+}
+
+@media (max-width: 425px) {
+  #hero .hero_summery {
+    text-align: center;
+  }
+  #hero .hero_summery p {
+    font-size: 25px;
+    width: 90px;
+  }
+  #hero .hero_summery p span {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
