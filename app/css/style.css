@@ -69,6 +69,26 @@
   margin-top: -2px;
 }
 
+@media only screen and (max-width: 768px) {
+  #hero #hero_dot_blob {
+    width: 350px;
+    height: 350px;
+  }
+  #hero .hero_summery {
+    text-align: center;
+  }
+  #hero .hero_summery p {
+    font-size: 25px;
+    padding-top: 0px;
+    width: 190px;
+    height: 60px;
+    overflow: hidden;
+  }
+  #hero .hero_summery p span {
+    font-size: 12px;
+    margin-top: 0px;
+  }
+}
 @media (max-width: 425px) {
   #navbar #logo_white,
   #navbar #logo_black {
@@ -84,18 +104,12 @@
   #hero .hero_summery p {
     font-size: 25px;
     padding-top: 0px;
-    width: 90px;
+    width: 80px;
     height: 60px;
     overflow: hidden;
   }
   #hero .hero_summery p span {
     font-size: 12px;
     margin-top: 0px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  #hero #hero_dot_blob {
-    width: 350px;
-    height: 350px;
   }
 }/*# sourceMappingURL=style.css.map */
