@@ -151,7 +151,6 @@ body {
 	}
 }
 
-
 // section 01 - Hero Section 
 #hero {
 	.hero_title {
@@ -328,6 +327,36 @@ body {
 }
 
 
+//footer
+#footer{
+	h6{
+		font-family: $Nantes400;
+	}
+	#footer_url{
+		font-size: 20px;
+		p{
+			font-family: $Messina600;
+			width: 700;
+		}
+		a{
+			color: $cBlueLight;
+			font-family: $NeueW1G400;
+			line-height: 30px;
+		}
+	}
+
+	#location{
+		font-size: 20px;
+		color: $cBlack300;
+		h6{
+			font-family: $Messina600;
+			font-weight: 700;
+		}
+		a{
+			font-family: $Messina400;
+		}
+	}
+}
 
 @media (min-width: 600px) and (max-width: 1199px) {
 	#hero {

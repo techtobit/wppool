@@ -278,6 +278,33 @@ body {
   font-family: NeueHaasUnicaW1G;
 }
 
+#footer h6 {
+  font-family: NantesRegular;
+}
+#footer #footer_url {
+  font-size: 20px;
+}
+#footer #footer_url p {
+  font-family: MessinaSansBold;
+  width: 700;
+}
+#footer #footer_url a {
+  color: #115CD9;
+  font-family: NeueHaasUnicaW1G;
+  line-height: 30px;
+}
+#footer #location {
+  font-size: 20px;
+  color: #191618;
+}
+#footer #location h6 {
+  font-family: MessinaSansBold;
+  font-weight: 700;
+}
+#footer #location a {
+  font-family: MessinaSansRegular;
+}
+
 @media (min-width: 600px) and (max-width: 1199px) {
   #hero #hero_dot_blob {
     width: 350px;
