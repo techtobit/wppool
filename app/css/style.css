@@ -47,7 +47,8 @@
   font-display: swap;
 }
 body {
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #section_title {
@@ -59,7 +60,7 @@ body {
   color: #191618;
 }
 
-#section_subtitle {
+#section_subtitle, #stories_ideas #stories #avatar_info p {
   font-family: MessinaSansLight;
   font-weight: 350;
   font-size: 16px;
@@ -68,7 +69,11 @@ body {
   left: 93px;
 }
 
-#primary_button, #stories_ideas #_btn, #wppool_index .table_btn #_btn, #menuList #_btn {
+#section_title_light {
+  font-family: NantesRegular;
+}
+
+#primary_button, #stories_ideas #stories #more_info_btn #_btn, #wppool_index .table_btn #_btn, #menuList #_btn {
   color: #FFFFFF;
   background-color: #2042B6;
   border-radius: 124px;
@@ -79,7 +84,8 @@ body {
   font-weight: normal;
 }
 
-#min_card, #future_listings .list_card {
+#min_card, #future_listings .list_card,
+.portfolio_companies .list_card {
   background-color: #FFFFFF;
   width: 220px;
   height: 120px;
@@ -88,11 +94,6 @@ body {
   justify-items: center;
   align-items: center;
   border-radius: 6px;
-}
-
-#min_card_img, #future_listings .list_card img {
-  width: 122px;
-  height: 55px;
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -104,7 +105,7 @@ body {
     left: 93px;
     color: #191618;
   }
-  #section_subtitle {
+  #section_subtitle, #stories_ideas #stories #avatar_info p {
     font-family: MessinaSansLight;
     font-weight: 350;
     font-size: 16px;
@@ -112,36 +113,38 @@ body {
     color: #191618;
     left: 93px;
   }
-  #primary_button, #stories_ideas #_btn, #wppool_index .table_btn #_btn, #menuList #_btn {
+  #primary_button, #stories_ideas #stories #more_info_btn #_btn, #wppool_index .table_btn #_btn, #menuList #_btn {
     color: #FFFFFF;
     background-color: #2042B6;
     border-radius: 124px;
   }
-  #min_card, #future_listings .list_card {
+  #min_card, #future_listings .list_card,
+  .portfolio_companies .list_card {
     background-color: #FFFFFF;
     width: 150px;
     height: 80px;
   }
-  #min_card_img, #future_listings .list_card img {
-    width: 80px;
-    height: 40px;
+  #min_card_img, #future_listings .list_card img,
+  .portfolio_companies .list_card img {
+    padding: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {
   #section_title {
     font-size: 30px;
   }
-  #section_subtitle {
+  #section_subtitle, #stories_ideas #stories #avatar_info p {
     font-size: 14px;
   }
-  #min_card, #future_listings .list_card {
+  #min_card, #future_listings .list_card,
+  .portfolio_companies .list_card {
     background-color: #FFFFFF;
     width: 100px;
     height: 60px;
   }
-  #min_card_img, #future_listings .list_card img {
-    width: 40px;
-    height: 20px;
+  #min_card_img, #future_listings .list_card img,
+  .portfolio_companies .list_card img {
+    padding: 10px;
   }
 }
 #menuList {
@@ -186,6 +189,10 @@ body {
   background-position: 20px center;
   padding-left: 50px;
 }
+#wppool_index #table_section_tile {
+  font-family: NantesRegular;
+  color: #191618;
+}
 #wppool_index .table_btn #_btn {
   font-family: MessinaSansRegular;
 }
@@ -216,6 +223,59 @@ body {
 }
 #companyTable tbody tr:nth-child(odd) {
   background-color: #F3F3F3;
+}
+
+#stories_ideas #stories {
+  background-color: #FFFFFF;
+  width: 380px;
+  height: 220px;
+  border-radius: 8px;
+  position: relative;
+}
+#stories_ideas #stories #avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  left: 10px;
+  position: absolute;
+  top: -40px;
+}
+#stories_ideas #stories #avatar2 {
+  background-color: #FFFFFF;
+  width: 60px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 10;
+  top: -40px;
+  left: 20px;
+  border-top-left-radius: 8px;
+}
+#stories_ideas #stories #avatar_info {
+  position: absolute;
+  top: 75px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+#stories_ideas #stories #avatar_info h5 {
+  font-family: MessinaSansRegular;
+  font-weight: 400;
+  line-height: 19.6px;
+  font-size: 20px;
+  color: #2042B6;
+}
+#stories_ideas #stories #avatar_info p {
+  font-family: NantesRegular;
+}
+#stories_ideas #stories #more_info_btn {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+#stories_ideas #stories #more_info_btn #_btn {
+  font-family: NeueHaasUnicaW1G;
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -249,6 +309,11 @@ body {
     height: 40px;
     border-radius: 50px;
     line-height: 19.2px;
+  }
+  #stories_ideas #stories {
+    background-color: #FFFFFF;
+    width: 330px;
+    height: 220px;
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {

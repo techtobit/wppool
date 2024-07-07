@@ -12,11 +12,17 @@
 				extend: {
 					colors: {
 						blue: '#2042B6',
+						blue: {
+							500: '#2042B6',
+							400: '#90B8F0'
+						},
 						white: {
 							500: '#FFFFFF',
 							400: "#F3F3F3",
 							300: '#EFF3F6',
 							200: '#DADADA',
+							100: '#E6E6E6',
+							50 : '#7D7F81',
 						},
 						light: '#D9D9D9',
 						black: '#191618',
@@ -76,8 +82,7 @@
 						class=" flex justify-center items-center w-[42px] h-[42px] rounded-full border border-1 border-0 bg-semiGreen">
 						<img class="w-[10px] h-[10px]" src="../assets/icons/shareIcon.png" />
 					</li>
-					<button id="_btn"
-						class="w-[182px] h-[42px] text-[12px]">
+					<button id="_btn" class="w-[182px] h-[42px] text-[12px]">
 						Download the 2024 Report</button>
 					<button id="close_toggol_menu">
 						<img class="pl-[15px]" src="../assets/icons/close.png" />
@@ -94,15 +99,15 @@
 				<li>About WPPOOL</li>
 				<li>WPPOOL Portfolio Companies</li>
 				<li href="" class="mt-6">
-					<a href="" class="underline text-blue text-[21px]">Visit WPPOOL</a>
+					<a href="" class="underline text-blue-500 text-[21px]">Visit WPPOOL</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 
 	<!-- hero section  -->
-	<section id="hero" class="section reletive bg-blue h-screen w-full  flex  justify-center items-center">
-		<img id="hero_dot_blob" class="opacity-85 text-blue bg-blue" src="../assets/dot.svg" alt="">
+	<section id="hero" class="section reletive bg-blue-500  w-full  flex  justify-center items-center">
+		<img id="hero_dot_blob" class="opacity-85 text-blue-500 bg-blue-500" src="../assets/dot.svg" alt="">
 		<div id="hero_info"
 			class="hero_title w-[350px] md:w-[550px] lg:w-[1145px] absolute flex flex-col justify-center items-center text-center text-white-500">
 			<h1 class="lg:text-[78px] md:text-[40px] text-[30px]">The WPPOOL Index</h1>
@@ -131,18 +136,19 @@
 	</section>
 
 	<!-- companies info  -->
-	<section id="wppool_index" class="section  w-full ">
-		<div class="section_header px-[20px] md:px[20px] lg:px-[40px]  pt-[40px] flex justify-between items-center">
-			<p id="" class="text-[20px] md:text-[25px] lg:text-[48px]">All Companies</p>
+	<section id="wppool_index" class="section w-full pt-10 bg-white-500">
+		<div class="section_header px-[20px] md:px[20px] lg:px-[40px]   flex justify-between items-center">
+			<p id="table_section_tile" class="text-[20px] md:text-[25px] lg:text-[48px]">All Companies</p>
 			<search>
 				<form class="flex items-center ">
 					<input
-						class="h-[40px] lg:h-[58px] w-[200px] md:w-[300px]  lg:w-[588px] text-[15px] lg:text-[24px] bg-white-400 border-2 border-white-200 rounded-md outline-blue placeholder-black"
+						class="h-[40px] lg:h-[58px] w-[200px] md:w-[300px]  lg:w-[588px] text-[15px] lg:text-[24px] bg-white-400 border-2 border-white-200 rounded-md outline-blue-500 placeholder-black"
 						name="search" id="search" placeholder="Search Companies">
 				</form>
 			</search>
 		</div>
-		<div class="table_container flex justify-center px-[20px] md:px-[20px] lg:px-[40px] pt-[40px] !h-[70vh] overflow-y-auto">
+		<div
+			class="table_container flex justify-center px-[20px] md:px-[20px] lg:px-[40px] pt-[40px] !h-[70vh] overflow-y-auto">
 			<table id="companyTable" class=" ">
 				<thead>
 					<tr>
@@ -310,12 +316,10 @@
 			</table>
 		</div>
 		<div class="table_btn py-10 flex bg-white-200 justify-center gap-10 left-0 top-0">
-			<button id="_btn"
-				class="lg:w-[250px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px]">
+			<button id="_btn" class="lg:w-[250px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px]">
 				Download the 2024 Report
 			</button>
-			<button id="_btn"
-				class="lg:w-[182px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px]">
+			<button id="_btn" class="lg:w-[182px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px]">
 				View Methodology
 			</button>
 		</div>
@@ -323,13 +327,15 @@
 	</section>
 
 	<!-- Potential Future Listings -->
-	<section id="future_listings" class="section px-[20px] lg:pl-[93px] pt-10 h-screen w-full">
+	<section id="future_listings" class="section pt-14 px-[20px] lg:pl-[93px] w-full">
 		<div id="section_header" class="">
 			<h1 id="section_title" class="text-[30px]">Potential Future Listings</h1>
-			<p id="section_subtitle" class="lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+			<p id="section_subtitle" class="lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+				vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per
+				conubia nostra, per inceptos himenaeos. </p>
 		</div>
 		<div class="future_list pt-4  lg:pr-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px]">
-			<div  class="list_card">
+			<div class="list_card">
 				<img id="card_img" src="../assets/company/strip.png" alt="">
 			</div>
 			<div class="list_card">
@@ -339,7 +345,8 @@
 				<img class="" src="../assets/company/plaid.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="w-[30px] md:w-[80px] lg:w-[122px]  h-[30px] lg:h-[55px]" src="../assets/company/checkout.png" alt="">
+				<img class="w-[30px] md:w-[80px] lg:w-[122px]  h-[30px] lg:h-[55px]" src="../assets/company/checkout.png"
+					alt="">
 			</div>
 			<div class="list_card">
 				<img class="" src="../assets/company/revolut.png" alt="">
@@ -364,18 +371,172 @@
 
 
 	<!-- Stories & Ideas -->
-	<section id="stories_ideas" class="section px-[20px] lg:pl-[93px] pt-10 h-screen w-full ">
+	<section id="stories_ideas" class="section pt-14 px-[20px] lg:pl-[93px]  w-full ">
 		<div id="section_header" class="">
-			<h1 id="section_title" class="">Potential Future Listings</h1>
-			<p id="section_subtitle" class="lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+			<h1 id="section_title" class="">Stories & Ideas</h1>
+			<p id="section_subtitle" class="lg:w-[880px]">The latest news and updates </p>
 		</div>
-		<div id="stories" class=" w-[300px] h-[220px]  rounded-lg">
-			<img src="" alt="">
-			<h5>By: Sahabuddin Sagor</h5>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
-			<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+		<div class="storie_list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 lg:gap-20 py-20 lg:pr-32  ">
+			<div id="stories" class="">
+				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<div id="avatar_info">
+					<h5>By: Sahabuddin Sagor</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+				</div>
+				<div id="more_info_btn">
+					<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+				</div>
+			</div>
+			<div id="stories" class="">
+				<img id="avatar" src="../assets/persons/image 98.png" alt="">
+				<div id="avatar_info">
+					<h5>By: Nayem Khan</h5>
+					<p>Lorem ipsum dolor sit amet </p>
+				</div>
+				<div id="more_info_btn">
+					<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+				</div>
+			</div>
+			<div id="stories" class="">
+				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<div id="avatar2">
+					<img src="../assets/persons/image 100.png" alt="">
+				</div>
+				<div id="avatar_info">
+					<h5>By: Sahabuddin Sagor</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+				</div>
+				<div id="more_info_btn">
+					<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+				</div>
+			</div>
+			<div id="stories" class="">
+				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<div id="avatar_info">
+					<h5>By: Sahabuddin Sagor</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+				</div>
+				<div id="more_info_btn">
+					<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+				</div>
+			</div>
+			<div id="stories" class="">
+				<img id="avatar" src="../assets/persons/image 98.png" alt="">
+				<div id="avatar_info">
+					<h5>By: Nayem Khan</h5>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+				<div id="more_info_btn">
+					<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+				</div>
+			</div>
+			<div id="stories" class="">
+				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<div id="avatar2">
+					<img src="../assets/persons/image 100.png" alt="">
+				</div>
+
+				<div id="avatar_info">
+					<h5>By: Sahabuddin Sagor</h5>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+				</div>
+				<div id="more_info_btn">
+					<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+				</div>
+			</div>
 		</div>
 	</section>
+
+
+	<section id="" class="section px-[20px] lg:pl-[93px] lg:pr-20   w-full ">
+		<div class="py-14 border-y-2 border-blue-400  ">
+		<div class="bg-white-500  rounded-lg lg:h-[420px] flex flex-col md:flex-row lg:flex-row  lg:py-20   ">
+			<div id="" class="lg:pl-[70px] mx-4 lg:mx-0  pb-12 pt-4 pb:py-0 lg:pt-0">
+				<h5 id="section_title">About WPPOOL</h5>
+				<h6 id="section_title_light" class="text-white-50 text-[30px]">Investing in wppool for over 50 years</h6>
+				<p id="section_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas
+					vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit
+					fugiat iusto fuga praesentiumoptio, eaque rerum! Provident similique accusantium nemo autem.</p>
+				<div class="pt-5">
+					<button id="primary_button" class="w-[167px] px-[10px] lg:py-[12px] h-[47px] text-[14px]">Contact WPPOOL</button>
+				</div>
+			</div>
+			<img class="w-[523px] h-[250px] lg:h-[340px]" src="../assets/about_wppool.png" alt="">
+		</div>
+	</div>
+		<!-- <div class="h-[2px]  bg-[#90B8F0] w-[95%]"></div> -->
+	</section>
+
+
+	<!-- Selected WPPOOL Portfolio Companies -->
+	<section id="" class="section px-[20px] lg:pl-[93px]   w-full ">
+			<h5 id="section_title">Selected WPPOOL Portfolio Companies</h5>
+			<div class="portfolio_companies pt-4  lg:pr-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px]">
+				<div class="list_card">
+					<img id="card_img" src="../assets/company/alibaba.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/vendr.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/vestwell.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/snapdocs.png"
+						alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/vendr.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/snapdocs.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/toast.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/connepay.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/connepay.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/mineralltee.png" alt="">
+				</div>
+				<div class="list_card">
+					<img id="card_img" src="../assets/company/flywire.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/quovo_logo.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/Vector.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/nota_bene_logo 1.png"
+						alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/Recurly_Logo_Purple 1.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/Group 169.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/toast.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/advisor.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/argyle-black-l 2.png" alt="">
+				</div>
+				<div class="list_card">
+					<img class="" src="../assets/company/ss-logo-2color-black 1.png" alt="">
+				</div>
+			</div>
+	</section>
+
 
 
 	<script src="../Javascript/main.js"></script>
