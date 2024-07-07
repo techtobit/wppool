@@ -124,7 +124,7 @@ body {
   }
   #min_card_img, #future_listings .list_card img {
     width: 80px;
-    height: 55px;
+    height: 40px;
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {
@@ -141,7 +141,7 @@ body {
   }
   #min_card_img, #future_listings .list_card img {
     width: 40px;
-    height: 40px;
+    height: 20px;
   }
 }
 #menuList {
