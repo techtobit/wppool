@@ -2,16 +2,137 @@
 @import 'scrollBar';
 @import 'font';
 
-
+// ===============Universell Style =============
 body {
 	width: 100%;
 	// height: 100vh;
 }
 
-// section 00- nav bar toggle menu 
 
+#section_title {
+	font-family: $Nantes400;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 57.6px;
+	left: 93px;
+	color: $cBlack300;
+}
+
+#section_subtitle {
+	font-family: $Messina300;
+	font-weight: 350;
+	font-size: 16px;
+	line-height: 25.6px;
+	color: $cBlack300;
+	left: 93px;
+}
+
+#primary_button {
+	color: $cWhite;
+	background-color: $cBlue;
+	border-radius: 124px;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	font-weight: normal;
+}
+
+#min_card {
+	background-color: $cWhite;
+	width: 220px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	border-radius: 6px;
+}
+
+#min_card_img {
+	width: 122px;
+	height: 55px;
+}
+
+
+
+// tablet 
+@media (min-width: 600px) and (max-width: 1199px) {
+	#section_title {
+		font-family: $Nantes400;
+		font-weight: 400;
+		font-size: 48px;
+		line-height: 57.6px;
+		left: 93px;
+		color: $cBlack300;
+	}
+
+	#section_subtitle {
+		font-family: $Messina300;
+		font-weight: 350;
+		font-size: 16px;
+		line-height: 25.6px;
+		color: $cBlack300;
+		left: 93px;
+	}
+
+	#primary_button {
+		color: $cWhite;
+		background-color: $cBlue;
+		border-radius: 124px;
+	}
+
+	#min_card {
+		background-color: $cWhite;
+		width: 150px;
+		height: 80px;
+	}
+
+	#min_card_img {
+		width: 80px;
+		height: 55px;
+	}
+
+}
+
+// Mobile
+@media (min-width: 320px) and (max-width: 425px) {
+	#section_title {
+		font-size: 30px;
+	}
+
+	#section_subtitle {
+		font-size: 14px;
+	}
+
+	#min_card {
+		background-color: $cWhite;
+		width: 100px;
+		height: 60px;
+	}
+
+	#min_card_img {
+		width: 40px;
+		height: 40px;
+	}
+
+}
+
+// ===================== Universell Style Ended ==========
+
+
+
+
+
+// =================== Section Style : Leptop 1440px ==========
+// section 00- nav bar toggle menu 
 #menuList {
 	display: none;
+
+	#_btn {
+		@extend #primary_button;
+		font-family: $Messina400;
+	}
 
 	ul {
 		li {
@@ -24,28 +145,29 @@ body {
 	}
 }
 
-// section 01 - Hero Section 
 
+
+// section 01 - Hero Section 
 #hero {
 	.hero_title {
 		h1 {
-			font-family: NantesRegular;
+			font-family: $Nantes400;
 		}
 
 		p {
-			font-family: MessinaSansLight;
+			font-family: $Messina300;
 		}
 	}
 
 	.hero_summery {
 		p {
-			font-family: NantesRegular;
+			font-family: $Nantes400;
 			font-size: 36px;
 			color: $cWhite;
 			padding-top: 25px;
 
 			span {
-				font-family: NeueHaasUnicaW1G;
+				font-family: $NeueW1G400;
 				font-size: 16px;
 				color: $cGray;
 				margin-top: -2px;
@@ -60,7 +182,7 @@ body {
 
 		p,
 		input {
-			font-family: NantesRegular;
+			font-family: $Nantes400;
 		}
 
 		#search {
@@ -71,56 +193,72 @@ body {
 		}
 	}
 
+	.table_btn #_btn {
+		@extend #primary_button;
+		font-family: $Messina400;
+	}
+
 
 }
-#companyTable{
+
+#companyTable {
 	width: 100%;
 	border-collapse: separate;
 	border-spacing: 0 10px;
 	overflow-y: visible;
+
 	thead tr {
 		text-align: left;
 
 		th {
-			font-family: NantesRegular;
+			font-family: $Nantes400;
 			font-weight: 200;
 		}
 
 		th:first-child {
 			font-weight: bold;
 			// width: 20%;
-			font-family: MessinaSansBold;
+			font-family: $Messina600;
 		}
 	}
 
 	tr {
-			font-family: NantesRegular;
-			font-size: 16px;
-			height: 40px;
-			border-radius: 50px;
-			line-height: 19.2px;
-		}
-	
+		font-family: $Nantes400;
+		font-size: 16px;
+		height: 40px;
+		border-radius: 50px;
+		line-height: 19.2px;
+	}
+
 	tbody tr:nth-child(odd) {
 		background-color: $cGrayBright;
 	}
 
 }
 
+
 //section 04 - future lsiting
-#future_listings{
-	h1{
-		font-family: NantesRegular;
+#future_listings {
+	.list_card {
+		@extend #min_card;
+
+		img {
+			@extend #min_card_img
+		}
 	}
-	p{
-		font-family: MessinaSansLight;
+
+}
+
+
+#stories_ideas {
+	#_btn {
+		@extend #primary_button
 	}
 }
 
 
-// tablet 
-@media only screen and (max-width: 768px) {
 
+@media (min-width: 600px) and (max-width: 1199px) {
 	#hero {
 		#hero_dot_blob {
 			width: 350px;
@@ -147,31 +285,32 @@ body {
 	}
 
 
-	#companyTable{
+	#companyTable {
 		overflow: visible;
+
 		thead tr {
 			text-align: left;
 			font-size: 10px;
-			position: sticky;
-			top: 0;
-			z-index: 1; 
-	
+			// position: sticky;
+			// top: 0;
+			// z-index: 1; 
+
 		}
-	
+
 		tr {
-				font-size: 10px;
-				height: 40px;
-				border-radius: 50px;
-				line-height: 19.2px;
-			}
+			font-size: 10px;
+			height: 40px;
+			border-radius: 50px;
+			line-height: 19.2px;
+		}
 	}
+
 
 }
 
 
-// Mobile Responsive
 
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
 
 	#navbar {
 
@@ -208,24 +347,25 @@ body {
 
 
 	///
-	
-	#companyTable{
+
+	#companyTable {
 		overflow: visible;
+
 		thead tr {
 			text-align: left;
 			font-size: 8px;
-			position: sticky;
-			top: 0;
-			z-index: 1; 
-	
+			// position: sticky;
+			// top: 0;
+			// z-index: 1; 
+
 		}
-	
+
 		tr {
-				font-size: 10px;
-				height: 40px;
-				border-radius: 50px;
-				line-height: 19.2px;
-			}
+			font-size: 10px;
+			height: 40px;
+			border-radius: 50px;
+			line-height: 19.2px;
+		}
 	}
 
 }

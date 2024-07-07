@@ -50,8 +50,105 @@ body {
   width: 100%;
 }
 
+#section_title {
+  font-family: NantesRegular;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  left: 93px;
+  color: #191618;
+}
+
+#section_subtitle {
+  font-family: MessinaSansLight;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #191618;
+  left: 93px;
+}
+
+#primary_button, #stories_ideas #_btn, #wppool_index .table_btn #_btn, #menuList #_btn {
+  color: #FFFFFF;
+  background-color: #2042B6;
+  border-radius: 124px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-weight: normal;
+}
+
+#min_card, #future_listings .list_card {
+  background-color: #FFFFFF;
+  width: 220px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+#min_card_img, #future_listings .list_card img {
+  width: 122px;
+  height: 55px;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+  #section_title {
+    font-family: NantesRegular;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57.6px;
+    left: 93px;
+    color: #191618;
+  }
+  #section_subtitle {
+    font-family: MessinaSansLight;
+    font-weight: 350;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #191618;
+    left: 93px;
+  }
+  #primary_button, #stories_ideas #_btn, #wppool_index .table_btn #_btn, #menuList #_btn {
+    color: #FFFFFF;
+    background-color: #2042B6;
+    border-radius: 124px;
+  }
+  #min_card, #future_listings .list_card {
+    background-color: #FFFFFF;
+    width: 150px;
+    height: 80px;
+  }
+  #min_card_img, #future_listings .list_card img {
+    width: 80px;
+    height: 55px;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  #section_title {
+    font-size: 30px;
+  }
+  #section_subtitle {
+    font-size: 14px;
+  }
+  #min_card, #future_listings .list_card {
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 60px;
+  }
+  #min_card_img, #future_listings .list_card img {
+    width: 40px;
+    height: 40px;
+  }
+}
 #menuList {
   display: none;
+}
+#menuList #_btn {
+  font-family: MessinaSansRegular;
 }
 #menuList ul li {
   line-height: 40px;
@@ -89,6 +186,9 @@ body {
   background-position: 20px center;
   padding-left: 50px;
 }
+#wppool_index .table_btn #_btn {
+  font-family: MessinaSansRegular;
+}
 
 #companyTable {
   width: 100%;
@@ -118,14 +218,7 @@ body {
   background-color: #F3F3F3;
 }
 
-#future_listings h1 {
-  font-family: NantesRegular;
-}
-#future_listings p {
-  font-family: MessinaSansLight;
-}
-
-@media only screen and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1199px) {
   #hero #hero_dot_blob {
     width: 350px;
     height: 350px;
@@ -150,9 +243,6 @@ body {
   #companyTable thead tr {
     text-align: left;
     font-size: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
   }
   #companyTable tr {
     font-size: 10px;
@@ -161,7 +251,7 @@ body {
     line-height: 19.2px;
   }
 }
-@media (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   #navbar #logo_white,
   #navbar #logo_black {
     width: 100px;
@@ -190,9 +280,6 @@ body {
   #companyTable thead tr {
     text-align: left;
     font-size: 8px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
   }
   #companyTable tr {
     font-size: 10px;

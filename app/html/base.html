@@ -39,7 +39,6 @@
 			<ul class="flex items-center gap-[10px]">
 				<li id="share_btn"
 					class=" flex justify-center items-center lg:w-[42px] w-[30px] lg:h-[42px] h-[30px] rounded-full border border-1 border-black">
-					<!-- <img id="share_icon" class="lg:w-[10px]  lg:h-[10px] " src="../assets/icons/share.svg" /> -->
 					<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<mask id="mask0_1_1011" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14"
 							height="14">
@@ -52,10 +51,10 @@
 						</g>
 					</svg>
 				</li>
-				<li id="download_btn"
+				<button id="download_btn"
 					class="lg:w-[182px] w-[150px] lg:h-[42px] h-[30px] lg:text-[12px] text-[10px] flex justify-center items-center font-normal border border-1 border-black rounded-full">
 					Download the 2024 Report
-				</li>
+				</button>
 				<button id="open_toggol_menu" class="pl-[8px] lg:pl-[15px]">
 					<!-- <img id="open_toggol_icon" class="text-black" src="../assets/icons/menuIcon.png" /> -->
 					<svg id="open_toggol_icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
@@ -69,7 +68,7 @@
 
 			</ul>
 		</div>
-		<div id="menuList" class="w-[340px] h-[500px] !z-50 absolute bg-white-500 right-0 top-0 mr-1 mt-1 rounded-[18px]">
+		<div id="menuList" class="w-[340px] h-[500px] !z-50 absolute  right-0 top-0 mr-1 mt-1 rounded-[18px]">
 
 			<div class="flex justify-center pt-[48px]">
 				<ul class="flex items-center gap-[10px]">
@@ -77,9 +76,9 @@
 						class=" flex justify-center items-center w-[42px] h-[42px] rounded-full border border-1 border-0 bg-semiGreen">
 						<img class="w-[10px] h-[10px]" src="../assets/icons/shareIcon.png" />
 					</li>
-					<li id="download_btn"
-						class="w-[182px] h-[42px] text-[12px] flex justify-center items-center font-normal border-0 text-white-500 rounded-full bg-blue">
-						Download the 2024 Report</li>
+					<button id="_btn"
+						class="w-[182px] h-[42px] text-[12px]">
+						Download the 2024 Report</button>
 					<button id="close_toggol_menu">
 						<img class="pl-[15px]" src="../assets/icons/close.png" />
 					</button>
@@ -132,9 +131,9 @@
 	</section>
 
 	<!-- companies info  -->
-	<section id="wppool_index" class="section bg-white-500 w-full ">
+	<section id="wppool_index" class="section  w-full ">
 		<div class="section_header px-[20px] md:px[20px] lg:px-[40px]  pt-[40px] flex justify-between items-center">
-			<p class="text-[20px] md:text-[25px] lg:text-[48px]">All Companies</p>
+			<p id="section_title" class="text-[20px] md:text-[25px] lg:text-[48px]">All Companies</p>
 			<search>
 				<form class="flex items-center ">
 					<input
@@ -144,7 +143,7 @@
 			</search>
 		</div>
 		<div class="table_container flex justify-center px-[20px] md:px-[20px] lg:px-[40px] pt-[40px] !h-[70vh] overflow-y-auto">
-			<table id="companyTable" class="bg-white-500 ">
+			<table id="companyTable" class=" ">
 				<thead>
 					<tr>
 						<th>Company</th>
@@ -312,11 +311,11 @@
 		</div>
 		<div class="table_btn py-10 flex bg-white-200 justify-center gap-10 left-0 top-0">
 			<button id="_btn"
-				class="lg:w-[250px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px] bg-blue text-white-500 flex justify-center items-center font-normal  rounded-full">
+				class="lg:w-[250px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px]">
 				Download the 2024 Report
 			</button>
 			<button id="_btn"
-				class="lg:w-[182px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px] bg-blue text-white-500 flex justify-center items-center font-normal  rounded-full">
+				class="lg:w-[182px] w-[150px] lg:h-[42px] h-[30px] lg:text-[16px] text-[10px]">
 				View Methodology
 			</button>
 		</div>
@@ -325,46 +324,57 @@
 
 	<!-- Potential Future Listings -->
 	<section id="future_listings" class="section px-[20px] lg:pl-[93px] pt-10 h-screen w-full">
-		<div class="future_section_header">
-			<h1 class="text-[30px] lg:text-[48px]">Potential Future Listings</h1>
-			<p class="text-[16px] lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+		<div id="section_header" class="">
+			<h1 id="section_title" class="text-[30px]">Potential Future Listings</h1>
+			<p id="section_subtitle" class="lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 		</div>
 		<div class="future_list pt-4  lg:pr-16 grid grid-cols-3 lg:grid-cols-5 gap-[20px]">
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px] rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/strip.png" alt="">
+			<div  class="list_card">
+				<img id="card_img" src="../assets/company/strip.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/klarna.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/klarna.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/plaid.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/plaid.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
+			<div class="list_card">
 				<img class="w-[30px] md:w-[80px] lg:w-[122px]  h-[30px] lg:h-[55px]" src="../assets/company/checkout.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/revolut.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/revolut.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/chime.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/chime.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/n26.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/n26.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/brex.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/brex.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/deel.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/deel.png" alt="">
 			</div>
-			<div class="bg-white-500 w-[100px]  md:w-[150px] lg:w-[220px] h-[60px] md:h-[80px] lg:h-[120px]  rounded-md flex justify-center items-center">
-				<img class="w-[40px] md:w-[80px] lg:w-[122px]  h-[40px] lg:h-[55px]" src="../assets/company/gusto.png" alt="">
+			<div class="list_card">
+				<img class="" src="../assets/company/gusto.png" alt="">
 			</div>
 		</div>
 	</section>
 
 
-	<section id="companiesa" class="section h-screen w-full ">
+	<!-- Stories & Ideas -->
+	<section id="stories_ideas" class="section px-[20px] lg:pl-[93px] pt-10 h-screen w-full ">
+		<div id="section_header" class="">
+			<h1 id="section_title" class="">Potential Future Listings</h1>
+			<p id="section_subtitle" class="lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+		</div>
+		<div id="stories" class=" w-[300px] h-[220px]  rounded-lg">
+			<img src="" alt="">
+			<h5>By: Sahabuddin Sagor</h5>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+			<button id="_btn" class="w-[93px] px-[10px] py-[12px] h-[30px] text-[14px]">Read More</button>
+		</div>
 	</section>
 
 
