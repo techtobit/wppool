@@ -1,1 +1,1 @@
-{"version":3,"sources":["scrollBar.scss","scrollBar.css","colors.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;ACDF;;ADIA;EACE,mBEFO;ADCT;;ADIA;EACE,mBELW;EFMX,mBAAA;ACDF;;ADIA;EACE,mBEhBO;ADeT","file":"scrollBar.css"}
+{"version":3,"sources":["scrollBar.scss","scrollBar.css","colors.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;ACDF;;ADIA;EACE,mBEDO;ADAT;;ADIA;EACE,mBEJW;EFKX,mBAAA;ACDF;;ADIA;EACE,mBEhBO;ADeT","file":"scrollBar.css"}
