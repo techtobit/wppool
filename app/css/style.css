@@ -91,7 +91,7 @@ body {
 }
 
 #primary_button:hover, #stories_ideas #stories #more_info_btn #_btn:hover, #wppool_index .table_btn #_btn:hover, #menuList #_btn:hover {
-  background-color: #AFCD80;
+  background-color: #115CD9;
 }
 
 #min_card, #future_listings .list_card,
@@ -183,6 +183,14 @@ body {
   font-family: NantesRegular;
   font-size: 16px;
   color: #647888;
+}
+
+#index_overview h1 {
+  font-size: NantesRegular;
+}
+#index_overview #overviewOf {
+  font-family: MessinaSansRegular;
+  line-height: normal;
 }
 
 #wppool_index .section_header p,

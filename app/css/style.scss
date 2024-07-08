@@ -53,7 +53,7 @@ body {
 
 
 #primary_button:hover{
-	background-color: $cSemiGreen;
+	background-color: $cBlueLight;
 }
 
 #min_card {
@@ -189,7 +189,22 @@ body {
 		font-size: 16px;
 		color: $cGray50;
 	}
+
 }
+
+#index_overview{
+	h1{
+		font-size: $Nantes400;
+	}
+	#overviewOf{
+		font-family: $Messina400;
+		line-height: normal;
+	}
+}
+
+
+
+
 
 // seciton 3 - companies
 #wppool_index {
