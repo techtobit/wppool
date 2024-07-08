@@ -87,7 +87,7 @@ body {
   justify-items: center;
   align-items: center;
   font-weight: normal;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 3px;
 }
 
 #primary_button:hover, #stories_ideas #stories #more_info_btn #_btn:hover, #wppool_index .table_btn #_btn:hover, #menuList #_btn:hover {

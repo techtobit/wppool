@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script>
@@ -35,113 +36,144 @@
 		}
 	</script>
 
+	<style>
+		body,
+		html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+		}
 
+		#chart-container {
+			height: 100vh;
+		}
 
-
-	<script type="text/javascript" src="../Javascript/srcipt.js">
-
-	</script>
-
+		#chart {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 </head>
 
-<body class="bg-light">
+<body>
 
-	<section class="w-full bg-white-500 h-[100vh]">
-		<!-- <div id="chart_div" class="w-full h-[100vh]"></div> -->
-		<div id="index_table " class="grid grid-cols-12  px-[25px] ">
-			<div id="table_nav" class="bg-white-300 w-full h-[40vh] col-span-2 flex flex-col rounded-[14px] px-[9px] ">
-				<div class="w-[200px] drop-shadow-lg h-[36px] bg-blue-500  rounded-md px-4 mt-2 flex  justify-between items-center">
-					<p class="!text-white-400">The Index</p>
-					<img class="w-[3.84px] h-[0.96px]" src="../assets/icons/-.png" alt="">
-				</div>
-				<div class="w-[200px] h-[36px]  rounded-md px-4 flex justify-between items-center">
-					<p class="text-white-20">The Index Tab Two</p>
-					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
-						</svg>
-				</div>
-				<div class="w-[200px] h-[36px] rounded-md px-4 flex justify-between items-center">
-					<p class="text-white-20">The Index Tab Three</p>
-					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
-						</svg>
-				</div>
-				<div class="w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
-					<p class="text-white-20">The Index Tab Four</p>
-					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
-						</svg>
-				</div>
-				<div class="w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
-					<p class="text-white-20">The Index Tab Five</p>
-					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
-						</svg>
-						
-				</div>
+
+
+
+
+	<section id="index_table " class="grid lg:grid-cols-12 w-full h-screen bg-white-500 px-4 lg:px-0 lg:pl-[25px] py-10 ">
+		<!-- <div  class=""> -->
+		<div id="table_nav" class="bg-white-300 w-full h-full col-span-2 flex flex-col rounded-[14px] px-[9px] ">
+			<div
+				class="w-full lg:w-[200px] drop-shadow-lg h-[36px] bg-blue-500  rounded-md px-4 mt-2 flex  justify-between items-center">
+				<p class="!text-white-400">The Index</p>
+				<img class="w-[3.84px] h-[0.96px]" src="../assets/icons/-.png" alt="">
 			</div>
-			<div class="bg-green-600 w-full h-[40vh] col-span-9 ml-2">
-				<div id="index_graph">
-					<div id="index_header">
-						<div id="index_title" class="flex items-center">
-							<svg width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M0.914491 40.5L26.5591 0.5H45.0855L19.4409 40.5H0.914491Z" stroke="#191618"/>
-							</svg>
-							<h1 id="section_title" class="!text-[36px]" >The WPPOOL Index</h1>
-						</div>
-						<div id="index_overview" class="grid grid-cols-4">
-							<div id="overview" class="w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
-								<h1 class="col-span-1 text-[#FC714D] text-[30px]">+66.2%</h1>
-								<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#FC714D] pr-2  ">
-									<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">WPPOOL Index</div>
-								</div>
-							</div>
-							<div id="overview" class="w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
-								<h1 class="col-span-1 text-[#615DE3] text-[30px]">+26.6%</h1>
-								<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#615DE3] pr-2  ">
-									<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">Goolge Index</div>
-								</div>
-							</div>
-							<div id="overview" class="w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
-								<h1 class="col-span-1 text-[#7CA63A] text-[30px]">+66.2%</h1>
-								<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#7CA63A] pr-2  ">
-									<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">Microsoft Index</div>
-								</div>
-							</div>
-							<div id="overview" class="w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
-								<h1 class="col-span-1 text-[#6F34A1] text-[30px]">+17%</h1>
-								<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#6F34A1] pr-2  ">
-									<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">Twitter Index</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="index_filter" class="flex justify-between py-5">
-					<div id="select_options" class="flex gap-10">
-						<div id="primary_button" class="w-[178px] h-[26px] text-[12px] !flex !justify-between !px-4 !items-center !drop-shadow-none">
-							<p>Sectors</p>
-							<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2.4177 3.91732L0.251037 1.75065C-0.0128516 1.48676 -0.0718794 1.18468 0.0739539 0.844401C0.219787 0.504123 0.480204 0.333984 0.855204 0.333984H5.14687C5.52187 0.333984 5.78229 0.504123 5.92812 0.844401C6.07395 1.18468 6.01493 1.48676 5.75104 1.75065L3.58437 3.91732C3.50104 4.00065 3.41076 4.06315 3.31354 4.10482C3.21632 4.14648 3.11215 4.16732 3.00104 4.16732C2.88993 4.16732 2.78576 4.14648 2.68854 4.10482C2.59132 4.06315 2.50104 4.00065 2.4177 3.91732Z" fill="white"/>
-							</svg>
-						</div>
-						<div id="primary_button" class="w-[178px] h-[26px] text-[12px] !flex !justify-between !px-4 !items-center !drop-shadow-none !shadow-transparent">
-							<p>Types of IPO</p>
-							<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2.4177 3.91732L0.251037 1.75065C-0.0128516 1.48676 -0.0718794 1.18468 0.0739539 0.844401C0.219787 0.504123 0.480204 0.333984 0.855204 0.333984H5.14687C5.52187 0.333984 5.78229 0.504123 5.92812 0.844401C6.07395 1.18468 6.01493 1.48676 5.75104 1.75065L3.58437 3.91732C3.50104 4.00065 3.41076 4.06315 3.31354 4.10482C3.21632 4.14648 3.11215 4.16732 3.00104 4.16732C2.88993 4.16732 2.78576 4.14648 2.68854 4.10482C2.59132 4.06315 2.50104 4.00065 2.4177 3.91732Z" fill="white"/>
-							</svg>
-						</div>
-					</div>
-					<div id="select_date" class="w-[232px] h-[30px] bg-white-300 flex justify-center gap-[2px] items-center rounded-full">
-						<p class="text-white-20 w-[36px] h-[24px]">1Y</p>
-						<p class="text-white-20 w-[36px] h-[24px]">YTD</p>
-						<p id="primary_button" class="w-[36px] h-[24px] ">6M</p>
-						<p class="text-white-20 w-[36px] h-[24px]">1M</p>
-						<p class="text-white-20 w-[36px] h-[24px]">1W</p>
-					</div>
-				</div>
+			<div class="w-full lg:w-[200px] h-[36px]  rounded-md px-4 flex justify-between items-center">
+				<p class="text-white-20">The Index Tab Two</p>
+				<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z"
+						fill="#647888" />
+				</svg>
+			</div>
+			<div class="w-full lg:w-[200px] h-[36px] rounded-md px-4 flex justify-between items-center">
+				<p class="text-white-20">The Index Tab Three</p>
+				<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z"
+						fill="#647888" />
+				</svg>
+			</div>
+			<div class="w-full lg:w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
+				<p class="text-white-20">The Index Tab Four</p>
+				<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z"
+						fill="#647888" />
+				</svg>
+			</div>
+			<div class="w-full lg:w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
+				<p class="text-white-20">The Index Tab Five</p>
+				<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z"
+						fill="#647888" />
+				</svg>
+
 			</div>
 		</div>
+
+		<div class=" h-[40vh]  lg:col-span-10 pt-6 lg:pt-0  lg:ml-2 lg:mr-[70px] ">
+			<div id="index_graph" class="">
+				<div id="index_header" class="">
+					<div id="index_title" class="flex items-center">
+						<svg width="46" height="41" viewBox="0 0 46 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0.914491 40.5L26.5591 0.5H45.0855L19.4409 40.5H0.914491Z" stroke="#191618" />
+						</svg>
+						<h1 id="section_title" class="!text-[36px]">The WPPOOL Index</h1>
+					</div>
+					<div id="index_overview" class="grid lg:grid-cols-4  gap-4 lg:gap-0">
+						<div id="overview"
+							class=" lg:w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
+							<h1 class="col-span-1 text-[#FC714D] text-[30px]">+66.2%</h1>
+							<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#FC714D] pr-2  ">
+								<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">WPPOOL Index</div>
+							</div>
+						</div>
+						<div id="overview" class="lg:w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
+							<h1 class="col-span-1 text-[#615DE3] text-[30px]">+26.6%</h1>
+							<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#615DE3] pr-2  ">
+								<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">Goolge Index</div>
+							</div>
+						</div>
+						<div id="overview" class="lg:w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
+							<h1 class="col-span-1 text-[#7CA63A] text-[30px]">+66.2%</h1>
+							<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#7CA63A] pr-2  ">
+								<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">Microsoft Index</div>
+							</div>
+						</div>
+						<div id="overview" class="lg:w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
+							<h1 class="col-span-1 text-[#6F34A1] text-[30px]">+17%</h1>
+							<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#6F34A1] pr-2  ">
+								<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">Twitter Index</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="index_filter"
+				class="flex flex-col lg:flex-row justify-center md:justify-around  lg:justify-between pt-5">
+				<div id="select_options" class="flex flex-row  gap-2 lg:gap-10">
+					<div id="primary_button"
+						class="w-[178px] md:w-full lg:w-[178px] h-[26px] text-[12px] !flex !justify-between !px-4 !items-center !drop-shadow-none">
+						<p>Sectors</p>
+						<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M2.4177 3.91732L0.251037 1.75065C-0.0128516 1.48676 -0.0718794 1.18468 0.0739539 0.844401C0.219787 0.504123 0.480204 0.333984 0.855204 0.333984H5.14687C5.52187 0.333984 5.78229 0.504123 5.92812 0.844401C6.07395 1.18468 6.01493 1.48676 5.75104 1.75065L3.58437 3.91732C3.50104 4.00065 3.41076 4.06315 3.31354 4.10482C3.21632 4.14648 3.11215 4.16732 3.00104 4.16732C2.88993 4.16732 2.78576 4.14648 2.68854 4.10482C2.59132 4.06315 2.50104 4.00065 2.4177 3.91732Z"
+								fill="white" />
+						</svg>
+					</div>
+					<div id="primary_button"
+						class="w-[178px] md:w-full lg:w-[178px] h-[26px] text-[12px] !flex !justify-between !px-4 !items-center !drop-shadow-none !shadow-transparent">
+						<p>Types of IPO</p>
+						<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M2.4177 3.91732L0.251037 1.75065C-0.0128516 1.48676 -0.0718794 1.18468 0.0739539 0.844401C0.219787 0.504123 0.480204 0.333984 0.855204 0.333984H5.14687C5.52187 0.333984 5.78229 0.504123 5.92812 0.844401C6.07395 1.18468 6.01493 1.48676 5.75104 1.75065L3.58437 3.91732C3.50104 4.00065 3.41076 4.06315 3.31354 4.10482C3.21632 4.14648 3.11215 4.16732 3.00104 4.16732C2.88993 4.16732 2.78576 4.14648 2.68854 4.10482C2.59132 4.06315 2.50104 4.00065 2.4177 3.91732Z"
+								fill="white" />
+						</svg>
+					</div>
+				</div>
+				<div id="select_date"
+					class="lg:w-[232px] h-[30px] bg-white-300 flex justify-center gap-5 md:gap-20 lg:gap-[2px] items-center rounded-full mt-4 lg:mt-0 lg:mr-[20px]">
+					<p class="text-white-20 w-[36px] h-[24px]">1Y</p>
+					<p class="text-white-20 w-[36px] h-[24px]">YTD</p>
+					<p id="primary_button" class="w-[36px] h-[24px] ">6M</p>
+					<p class="text-white-20 w-[36px] h-[24px]">1M</p>
+					<p class="text-white-20 w-[36px] h-[24px]">1W</p>
+				</div>
+			</div>
+			<div id="graph" class="h-[60vh]" >
+				<canvas id="chart" width="400" height="400"></canvas>
+				</div>
+		</div>
+		<!-- </div> -->
 	</section>
 
 	<!-- navigation -->
@@ -707,7 +739,7 @@
 	</section>
 
 
-
+	<script src="../Javascript/chart.js"></script>
 	<script src="../Javascript/main.js"></script>
 </body>
 
