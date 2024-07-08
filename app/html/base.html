@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script>
@@ -22,7 +23,8 @@
 							200: '#DADADA',
 							100: '#E6E6E6',
 							50: '#7D7F81',
-							25: '#9FA0A1'
+							25: '#9FA0A1',
+							20: '#647888',
 						},
 						light: '#D9D9D9',
 						black: '#191618',
@@ -32,13 +34,58 @@
 			}
 		}
 	</script>
-	<title>Wppool</title>
+
+
+
+
+	<script type="text/javascript" src="../Javascript/srcipt.js">
+
+	</script>
+
 </head>
 
 <body class="bg-light">
 
+	<section class="w-full bg-white-500 h-[100vh]">
+		<!-- <div id="chart_div" class="w-full h-[100vh]"></div> -->
+		<div id="index_table " class="grid grid-cols-12 px-[25px] ">
+			<div id="table_nav" class="bg-white-300 w-full h-[40vh] col-span-2 flex flex-col rounded-[14px] px-[9px] ">
+				<div class="w-[200px] drop-shadow-lg h-[36px] bg-blue-500  rounded-md px-4 mt-2 flex  justify-between items-center">
+					<p class="!text-white-400">The Index</p>
+					<img class="w-[3.84px] h-[0.96px]" src="../assets/icons/-.png" alt="">
+				</div>
+				<div class="w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
+					<p class="text-white-20">The Index Tab Two</p>
+					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
+						</svg>
+				</div>
+				<div class="w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
+					<p class="text-white-20">The Index Tab Three</p>
+					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
+						</svg>
+				</div>
+				<div class="w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
+					<p class="text-white-20">The Index Tab Four</p>
+					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
+						</svg>
+				</div>
+				<div class="w-[200px] h-[36px]    rounded-md px-4 flex justify-between items-center">
+					<p class="text-white-20">The Index Tab Five</p>
+					<svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7.13856 3.936H4.40256V6.912H3.63456V3.936H0.866563V3.216H3.63456V0.352H4.40256V3.216H7.13856V3.936Z" fill="#647888"/>
+						</svg>
+						
+				</div>
+			</div>
+			<div class="bg-green-600 w-full h-[40vh] col-span-10 ml-2"></div>
+		</div>
+	</section>
+
 	<!-- navigation -->
-	<nav class="flex lg:px-[45px] pt-[20px] fixed z-50 top-0 left-0 right-0 ">
+	<!-- <nav class="flex lg:px-[45px] pt-[20px] fixed z-50 top-0 left-0 right-0 ">
 		<div id="navbar" class="h-[58px] px-[20px] w-full flex justify-between items-center rounded-md">
 			<img id="logo_white" src="../assets/logo.png" />
 			<img id="logo_black" src="../assets/logoBlack.png" />
@@ -73,7 +120,7 @@
 
 			</ul>
 		</div>
-		<div id="menuList" class="w-[340px] h-[500px] !z-50 absolute  right-0 top-0 mr-1 mt-1 rounded-[18px]">
+		<div id="menuList" class="w-[340px] h-[500px] bg-white-500 !z-50 absolute  right-0 top-0 mr-1 mt-1 rounded-[18px]">
 
 			<div class="flex justify-center pt-[48px]">
 				<ul class="flex items-center gap-[10px]">
@@ -102,10 +149,10 @@
 				</li>
 			</ul>
 		</div>
-	</nav>
+	</nav> -->
 
 	<!-- hero section  -->
-	<section id="hero" class="section reletive bg-blue-500  w-full  flex  justify-center items-center">
+	<!-- <section id="hero" class="section reletive bg-blue-500  w-full  flex  justify-center items-center">
 		<img id="hero_dot_blob" class="opacity-85 text-blue-500 bg-blue-500" src="../assets/dot.svg" alt="">
 		<div id="hero_info"
 			class="hero_title w-[350px] md:w-[550px] lg:w-[1145px] absolute flex flex-col justify-center items-center text-center text-white-500">
@@ -132,10 +179,10 @@
 				<span>LTM avg. revenue growth rate</span>
 			</p>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- companies info  -->
-	<section id="wppool_index" class="section w-full pt-10 bg-white-500">
+	<section id="wppool_index" class="section   w-full pt-10 bg-white-500">
 		<div class="section_header px-[20px] md:px[20px] lg:px-[40px]   flex justify-between items-center">
 			<p id="table_section_tile" class="text-[20px] md:text-[25px] lg:text-[48px]">All Companies</p>
 			<search>
@@ -326,7 +373,7 @@
 	</section>
 
 	<!-- Potential Future Listings -->
-	<section id="future_listings" class="section pt-14 px-[20px] lg:pl-[93px] w-full">
+	<section id="future_listings" class="section pt-14 px-[20px] lg:pl-[93px]   w-full">
 		<div id="section_header" class="">
 			<h1 id="section_title" class="text-[30px]">Potential Future Listings</h1>
 			<p id="section_subtitle" class="lg:w-[880px]">Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -344,8 +391,7 @@
 				<img class="" src="../assets/company/plaid.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="w-[30px] md:w-[80px] lg:w-[122px]  h-[30px] lg:h-[55px]" src="../assets/company/checkout.png"
-					alt="">
+				<img class="" src="../assets/company/checkout.png" alt="">
 			</div>
 			<div class="list_card">
 				<img class="" src="../assets/company/revolut.png" alt="">
@@ -370,7 +416,7 @@
 
 
 	<!-- Stories & Ideas -->
-	<section id="stories_ideas" class="section pt-14 px-[20px] lg:pl-[93px]  w-full ">
+	<section id="stories_ideas" class="section px-[20px] lg:pl-[93px] w-full ">
 		<div id="section_header" class="">
 			<h1 id="section_title" class="">Stories & Ideas</h1>
 			<p id="section_subtitle" class="lg:w-[880px]">The latest news and updates </p>
@@ -446,10 +492,10 @@
 		</div>
 	</section>
 
-
-	<section id="" class="section px-[20px] lg:pl-[93px] lg:pr-20   w-full ">
+	<!-- about WPPOOL -->
+	<section id="about_wppool" class="section px-[20px] lg:pl-[93px] lg:pr-20    w-full ">
 		<div class="py-14 border-y-2 border-blue-400  ">
-			<div class="bg-white-500  rounded-lg lg:h-[420px] flex flex-col md:flex-row lg:flex-row  lg:py-20   ">
+			<div class="bg-white-500  rounded-lg lg:h-[420px] flex flex-col flex-col lg:flex-row  lg:py-20   ">
 				<div id="" class="lg:pl-[70px] mx-4 lg:mx-0  pb-12 pt-4 pb:py-0 lg:pt-0">
 					<h5 id="section_title">About WPPOOL</h5>
 					<h6 id="section_title_light" class="text-white-50 text-[30px]">Investing in wppool for over 50 years</h6>
@@ -462,16 +508,15 @@
 							WPPOOL</button>
 					</div>
 				</div>
-				<img class="w-[523px] h-[250px] lg:h-[340px]" src="../assets/about_wppool.png" alt="">
+				<img class="w-[523px] h-[250px] md:h-[340px] lg:h-[340px] md:ml-20" src="../assets/about_wppool.png" alt="">
 			</div>
 		</div>
 		<!-- <div class="h-[2px]  bg-[#90B8F0] w-[95%]"></div> -->
 	</section>
 
-
 	<!-- Selected WPPOOL Portfolio Companies -->
-	<section id="" class="section px-[20px] lg:pl-[93px]   w-full ">
-		<h5 id="section_title">Selected WPPOOL Portfolio Companies</h5>
+	<section id="wppool_portfolio" class="section px-[20px] lg:pl-[93px]   w-full ">
+		<h5 id="section_title" class="lg:mb-8">Selected WPPOOL Portfolio Companies</h5>
 		<div class="portfolio_companies pt-4  lg:pr-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px]">
 			<div class="list_card">
 				<img id="card_img" src="../assets/company/alibaba.png" alt="">
@@ -537,22 +582,27 @@
 	</section>
 
 	<!-- footer  -->
-	<section id="footer" class="section  lg:pr-20  pt-10  h-screen  w-full ">
-		<div class="footer_content bg-white-100  grid grid-cols-0 md:grid-cols-1 lg:grid-cols-4 px-5 lg:px-[94px] pt-20 pb-10">
-			
+	<section id="footer" class="section  lg:pr-20  pt-10     w-full ">
+		<div
+			class="footer_content bg-white-100 rounded-lg  grid grid-cols-0 md:grid-cols-1 lg:grid-cols-4 px-5 lg:px-[94px] pt-20 pb-10">
+
 			<div class="md:col-span-2 lg:col-span-2 grid lg:grid-row-4">
-				<div class="fotter_pra w-[354px]  lg:h-[296px] row-span-0 lg:row-span-3">
-					<h6 class="text-[20px] lg:text-[26px]">Experience remarkable WordPress products with a
+				<div class="fotter_pra lg:w-[354px]  lg:h-[296px] row-span-0 lg:row-span-3">
+					<h6 class="text-[20px] lg:text-[26px] ">Experience remarkable WordPress products with a
 						new level of power, beauty, and human-centered designs.
 					</h6>
 				</div>
 				<div class="fotter_pra lg:h-[296px] flex flex-col justify-end pt-10 lg:pt-0 ">
 					<div class="text-white-25 flex gap-10 pb-5">
-						<p >@2024</p>
+						<p>@2024</p>
 						<a href="/">Terms of Use</a>
 						<a href="/">Privacy Policy</a>
 					</div>
-					<p id="" class="text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaera 
+					<p id="" class="text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+						mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis
+						harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
+						accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate
+						aliquam nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaera
 					</p>
 				</div>
 

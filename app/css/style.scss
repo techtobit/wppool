@@ -3,9 +3,16 @@
 @import 'font';
 
 // ===============Universell Style =============
+
+
 body {
 	margin: 0;
 	padding: 0;
+}
+
+.section{
+	height: auto !important;
+	min-height: 100vh !important;
 }
 
 
@@ -40,6 +47,13 @@ body {
 	justify-items: center;
 	align-items: center;
 	font-weight: normal;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	// box-shadow: 10px 10px;
+}
+
+
+#primary_button:hover{
+	background-color: $cSemiGreen;
 }
 
 #min_card {
@@ -63,21 +77,11 @@ body {
 // tablet 
 @media (min-width: 600px) and (max-width: 1199px) {
 	#section_title {
-		font-family: $Nantes400;
-		font-weight: 400;
-		font-size: 48px;
-		line-height: 57.6px;
-		left: 93px;
-		color: $cBlack300;
+		font-size: 38px;
 	}
 
 	#section_subtitle {
-		font-family: $Messina300;
-		font-weight: 350;
 		font-size: 16px;
-		line-height: 25.6px;
-		color: $cBlack300;
-		left: 93px;
 	}
 
 	#primary_button {
@@ -118,8 +122,6 @@ body {
 
 	#min_card_img {
 		padding: 10px;
-		// width: 40px;
-		// height: 20px;
 	}
 
 }
@@ -177,6 +179,15 @@ body {
 				margin-top: -2px;
 			}
 		}
+	}
+}
+
+// #indx 
+#table_nav{
+	p{
+		font-family: $Nantes400;
+		font-size: 16px;
+		color: $cGray50;
 	}
 }
 
@@ -342,6 +353,10 @@ body {
 			color: $cBlueLight;
 			font-family: $NeueW1G400;
 			line-height: 30px;
+		}
+		a:hover{
+			color: $cSemiGreen;
+			text-decoration: underline;
 		}
 	}
 

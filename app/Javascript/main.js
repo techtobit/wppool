@@ -32,8 +32,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (entry.isIntersecting) {
         const sectionId = entry.target.id;
         switch (sectionId) {
+          case 'hero':
+            navbar.style.backgroundColor = 'transparent';
+            downloadBtn.style.borderColor = '#FFFFFF';
+            downloadBtn.style.color = '#FFFFFF';
+            shareBtn.style.borderColor = '#FFFFFF';
+            logoBlack.style.display = 'none'
+            logoWhite.style.display = 'block'
+            break;
           case 'wppool_index':
-            navbar.style.backgroundColor = '#EFF3F6';
+            navbar.style.backgroundColor = '#E6E6E6';
             downloadBtn.style.borderColor = '#2042B6';
             downloadBtn.style.color = '#000000';
             shareBtn.style.borderColor = '#AFCD80';
@@ -50,12 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.backgroundColor = '#D3D3D3';
             break;
           default:
-            navbar.style.backgroundColor = 'transparent';
-            downloadBtn.style.borderColor = '#FFFFFF';
-            downloadBtn.style.color = '#FFFFFF';
-            shareBtn.style.borderColor = '#FFFFFF';
-            logoBlack.style.display = 'none'
-            logoWhite.style.display = 'block'
+            navbar.style.backgroundColor = '#F3F3F3';
+            downloadBtn.style.borderColor = '#2042B6';
+            downloadBtn.style.color = '#191618';
+            shareBtn.style.borderColor = '#AFCD80';
+            logoBlack.style.display = 'block'
+            logoWhite.style.display = 'none'
 
         }
       }
