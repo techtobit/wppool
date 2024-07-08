@@ -5,9 +5,11 @@
 // ===============Universell Style =============
 
 
-body {
+body,
+html {
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 
 .section{
@@ -183,6 +185,16 @@ body {
 }
 
 // #indx 
+
+#chart-container {
+	height: 100vh;
+}
+
+#chart {
+	width: 100%;
+	height: 100%;
+}
+
 #table_nav{
 	p{
 		font-family: $Nantes400;
@@ -388,6 +400,15 @@ body {
 	}
 }
 
+
+
+
+
+
+
+
+
+
 @media (min-width: 600px) and (max-width: 1199px) {
 	#hero {
 		#hero_dot_blob {
@@ -498,9 +519,6 @@ body {
 	}
 
 
-
-	///
-
 	#companyTable {
 		overflow: visible;
 
@@ -520,5 +538,6 @@ body {
 			line-height: 19.2px;
 		}
 	}
+
 
 }
