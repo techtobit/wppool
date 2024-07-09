@@ -262,7 +262,7 @@
 	</section>
 
 	<!-- State of USA -->
-	<div id="state_of_USA" class="section h-screen">
+	<div id="state_of_USA" class="section h-screen relative overflow-hidden">
 		<div class="section_header flex flex-col gap-3 lg:pl-[93px] pb-4">
 			<h1 id="section_title">State of USA</h1>
 			<button id="primary_button" class="w-[200px] h-[58px]  !flex !justify-around">
@@ -274,8 +274,9 @@
 			</button>
 			<p id="section_subtitle">Click through the slides or download the report to view natively on your device.</p>
 		</div>
-		<div id="slider" class="h-screen relative  overflow-hidden lg:pl-[60px]">
-			<div id="image-slider" class="splide absolute mr-[-35%] overflow-x-hidden">
+		<img class="absolute top-0 right-[5%]" src="../assets/icons/usaHologram.png" alt="">
+		<div id="slider" class="lg:pl-[60px] ">
+			<div id="image-slider" class="splide absolute h-fit pb-6 mr-[-35%] overflow-hidden ">
 				<div class="splide__track">
 					<ul class="splide__list">
 						<li class="splide__slide"><img src="../assets/rgegdg.png" alt="Slide 1"></li>
@@ -284,6 +285,14 @@
 					</ul>
 				</div>
 			</div>
+
+		</div>
+		<div id="slider_buttons_sections">
+			<button id="primary_button" class=" h-[56px] text-[16px] px-4 absolute right-[14%] bottom-24">Download the 2023 Report</button>
+			<div class="absolute flex items-center gap-2 left-[18%] bottom-24 ">Pages <div class="w-[120px] h-[56px] rounded-full bg-white-500 text-black flex items-center justify-around"><span>1 and 2</span> <svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M2.4177 3.91732L0.251037 1.75065C-0.0128516 1.48676 -0.0718794 1.18468 0.0739539 0.844401C0.219787 0.504123 0.480204 0.333984 0.855204 0.333984H5.14687C5.52187 0.333984 5.78229 0.504123 5.92812 0.844401C6.07395 1.18468 6.01493 1.48676 5.75104 1.75065L3.58437 3.91732C3.50104 4.00065 3.41076 4.06315 3.31354 4.10482C3.21632 4.14648 3.11215 4.16732 3.00104 4.16732C2.88993 4.16732 2.78576 4.14648 2.68854 4.10482C2.59132 4.06315 2.50104 4.00065 2.4177 3.91732Z" fill="blue"/>
+				</svg>
+				</div> of 37</div>
 		</div>
 	</div>
 

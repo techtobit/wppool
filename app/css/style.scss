@@ -296,12 +296,17 @@ html {
  
 
 // state_of_USA
-#state_of_USA{
 
-}
 #btn_text{
 	font-family: $Nantes400;
 	font-weight: 400;
+}
+
+#slider_buttons_sections{
+	button{
+		@extend #primary_button;
+		font-family: $Messina400;
+	}
 }
 //section 05 - Stories & Ideas
 
