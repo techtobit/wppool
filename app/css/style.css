@@ -423,4 +423,7 @@ html {
     border-radius: 50px;
     line-height: 19.2px;
   }
+  #stories_ideas #stories {
+    width: 350px;
+  }
 }/*# sourceMappingURL=style.css.map */
