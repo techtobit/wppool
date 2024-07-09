@@ -49,7 +49,6 @@ html {
 	align-items: center;
 	font-weight: normal;
 	box-shadow: rgba(0, 0, 0, 0.30) 0px 3px 3px;
-	// box-shadow: 10px 10px;
 }
 
 
@@ -279,42 +278,7 @@ html {
 
 }
 
-// section of slider 
-#slider{
-.splide {
-	max-width: 800px;
-	margin: auto;
-	position: relative;
-}
 
-.splide__slide img {
-	width: 30%;
-	display: block;
-}
-
-
-.splide__arrows {
-    position: absolute;
-		bottom: 0px !important;
-		left: 0px !important;
-    display: flex;
-    gap: 10px;    
-    z-index: 10;  
-}
-
-.splide__arrow {
-    background-color: rgb(228, 171, 15);
-    color: rgb(109, 36, 36);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-
-.splide__arrow--prev {
-    transform: rotate(180deg);
-}
-}
 
 
 //section 04 - future lsiting
@@ -329,8 +293,16 @@ html {
 	}
 
 }
+ 
 
+// state_of_USA
+#state_of_USA{
 
+}
+#btn_text{
+	font-family: $Nantes400;
+	font-weight: 400;
+}
 //section 05 - Stories & Ideas
 
 #stories_ideas {

@@ -8,6 +8,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/slider.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
 	<script>
 		tailwind.config = {
@@ -36,9 +37,10 @@
 			}
 		}
 	</script>
+
 </head>
 
-<body class="bg-white-200">
+<body class="bg-white-300">
 
 
 
@@ -260,14 +262,27 @@
 	</section>
 
 	<!-- State of USA -->
-	<div id="slider" class="section h-[100vh] relative pl-[93px]">
-		<div id="image-slider" class="splide absolute mr-[-34%] ">
-			<div class="splide__track">
-				<ul class="splide__list">
-					<li class="splide__slide"><img src="../assets/rgegdg.png" alt="Slide 1"></li>
-					<li class="splide__slide"><img src="../assets/rhrdgd.png" alt="Slide 2"></li>
-					<li class="splide__slide"><img src="../assets/dehjtfgd.png" alt="Slide 3"></li>
-				</ul>
+	<div id="state_of_USA" class="section h-screen">
+		<div class="section_header flex flex-col gap-3 lg:pl-[93px] pb-4">
+			<h1 id="section_title">State of USA</h1>
+			<button id="primary_button" class="w-[200px] h-[58px]  !flex !justify-around">
+				<p id="section_title" class="!text-[42px] !text-white-500">2024</p>
+				<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M2.4177 3.91732L0.251037 1.75065C-0.0128516 1.48676 -0.0718794 1.18468 0.0739539 0.844401C0.219787 0.504123 0.480204 0.333984 0.855204 0.333984H5.14687C5.52187 0.333984 5.78229 0.504123 5.92812 0.844401C6.07395 1.18468 6.01493 1.48676 5.75104 1.75065L3.58437 3.91732C3.50104 4.00065 3.41076 4.06315 3.31354 4.10482C3.21632 4.14648 3.11215 4.16732 3.00104 4.16732C2.88993 4.16732 2.78576 4.14648 2.68854 4.10482C2.59132 4.06315 2.50104 4.00065 2.4177 3.91732Z" fill="white"/>
+					</svg>
+					
+			</button>
+			<p id="section_subtitle">Click through the slides or download the report to view natively on your device.</p>
+		</div>
+		<div id="slider" class="h-screen relative  overflow-hidden lg:pl-[60px]">
+			<div id="image-slider" class="splide absolute mr-[-35%] overflow-x-hidden">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide"><img src="../assets/rgegdg.png" alt="Slide 1"></li>
+						<li class="splide__slide"><img src="../assets/rhrdgd.png" alt="Slide 2"></li>
+						<li class="splide__slide"><img src="../assets/dehjtfgd.png" alt="Slide 3"></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

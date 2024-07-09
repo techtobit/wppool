@@ -1,0 +1,39 @@
+.splide__arrows {
+	position: absolute;
+	bottom: 10px;
+	left: 80px;
+	display: flex;
+	gap: 10px;
+	z-index: 10;
+}
+
+.splide__arrow {
+	background-color: rgb(255, 255, 255);
+	color: rgb(68, 0, 255);
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.splide__arrow--prev {
+	background-image: none;
+}
+
+.splide__arrow--prev::before {
+	content: '';
+	background-image: url('../assets/icons/arrow_left.png');
+	z-index: 50;
+}
+
+.splide__arrow--next::after {
+	background-image: url('');
+	background-size: cover;
+	/* transform: rotate(180deg); */
+}
+
+.splide__arrow--next::before {
+	background-image: url('../assets/icons/arrow_right.png');
+	background-size: cover;
+	/* transform: rotate(180deg); */
+}
