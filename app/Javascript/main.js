@@ -11,6 +11,24 @@ close_MenuBtn.addEventListener('click', () => {
   menu.classList.remove('visible');
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#image-slider', {
+      type       : 'loop',
+      perPage    : 3,
+      perMove    : 1,
+      gap        : '1rem',
+      pagination : false,
+      breakpoints: {
+          800: {
+              perPage: 2,
+          },
+          500: {
+              perPage: 1,
+          },
+      },
+  }).mount();
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
