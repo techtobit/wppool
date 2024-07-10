@@ -195,12 +195,13 @@ body {
   color: #647888;
 }
 
-#index_overview h1 {
-  font-size: NantesRegular !important;
-}
 #index_overview #overviewOf {
   font-family: MessinaSansRegular;
   line-height: normal;
+}
+
+#overview_title {
+  font-size: NantesRegular !important;
 }
 
 #wppool_index .section_header p,
@@ -208,7 +209,7 @@ body {
   font-family: NantesRegular;
 }
 #wppool_index .section_header #search {
-  background-image: url("assets/icons/search.png");
+  background-image: url("../assets/icons/search.png");
   background-repeat: no-repeat;
   background-position: 20px center;
   padding-left: 50px;
