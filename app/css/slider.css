@@ -25,7 +25,7 @@
 
 /* .splide__arrow--prev::before {
 	content: '';
-	background-image: url('../assets/icons/arrow_left.png');
+	background-image: url('assets/icons/arrow_left.png');
 	z-index: 50;
 } */
 

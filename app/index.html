@@ -7,8 +7,8 @@
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
 	<script>
 		tailwind.config = {
@@ -47,21 +47,21 @@
 	<!-- navigation -->
 	<nav class="flex lg:px-[45px] pt-[20px] fixed z-50 top-0 left-0 right-0 ">
 		<div id="navbar" class="h-[58px] px-[20px] w-full flex justify-between items-center rounded-md">
-			<img id="logo_white" src="../assets/logo.png" />
-			<img id="logo_black" src="../assets/logoBlack.png" />
+			<img id="logo_white" src="assets/logo.png" />
+			<img id="logo_black" src="assets/logoBlack.png" />
 			<ul class="flex items-center gap-[10px]">
 				<button id="share_btn"
 					class=" flex justify-center items-center lg:w-[42px] w-[30px] lg:h-[42px] h-[30px] rounded-full border border-1 border-black">
-					<img id="share_icon_white" src="../assets/icons/shareIcon.png" alt="">
-					<img id="share_icon_black" src="../assets/icons/shareBalck.png" alt="">
+					<img id="share_icon_white" src="assets/icons/shareIcon.png" alt="">
+					<img id="share_icon_black" src="assets/icons/shareBalck.png" alt="">
 				</button>
 				<button id="download_btn"
 					class="lg:w-[182px] w-[150px] lg:h-[42px] h-[30px] lg:text-[12px] text-[10px] flex justify-center items-center font-normal border border-1 border-black rounded-full">
 					Download the 2024 Report
 				</button>
 				<button id="open_toggol_menu" class="pl-[8px] lg:pl-[15px]">
-					<img id="menu_icon_white" src="../assets/icons/menuWhite.png" alt="">
-					<img id="menu_icon_black" src="../assets/icons/menuBlack.png" alt="">
+					<img id="menu_icon_white" src="assets/icons/menuWhite.png" alt="">
+					<img id="menu_icon_black" src="assets/icons/menuBlack.png" alt="">
 				</button>
 
 			</ul>
@@ -72,12 +72,12 @@
 				<ul class="flex items-center gap-[10px]">
 					<li id="share_btn"
 						class=" flex justify-center items-center w-[42px] h-[42px] rounded-full border border-1 border-0 bg-semiGreen">
-						<img class="w-[10px] h-[10px]" src="../assets/icons/shareIcon.png" />
+						<img class="w-[10px] h-[10px]" src="assets/icons/shareIcon.png" />
 					</li>
 					<button id="_btn" class="w-[182px] h-[42px] text-[12px]">
 						Download the 2024 Report</button>
 					<button id="close_toggol_menu">
-						<img class="pl-[15px]" src="../assets/icons/close.png" />
+						<img class="pl-[15px]" src="assets/icons/close.png" />
 					</button>
 				</ul>
 			</div>
@@ -96,12 +96,13 @@
 			</ul>
 		</div>
 	</nav>
+	<!-- scroll btn  -->
 	<button id="quck_nav_btn" class="bg-white-500 w-[32px] fixed z-40 md:w-[48px] lg:w-[64px] h-[32px] md:h-[48px] lg:h-[64px]  right-6 md:right-10 lg:right-16 bottom-10 transform shadow-2xl -rotate-90  rounded-full flex justify-center items-center">
-		<img id="quck_nav_icon" class="" src="../assets/icons/arrow_right.png" alt="">
+		<img id="quck_nav_icon" class="" src="assets/icons/arrow_right.png" alt="">
 	</button>
 	<!-- hero section  -->
 	<section id="hero" class="section reletive bg-blue-500 h-[100vh] w-full  flex  justify-center items-center">
-		<img id="hero_dot_blob" class="opacity-85 text-blue-500 bg-blue-500" src="../assets/dot.svg" alt="">
+		<img id="hero_dot_blob" class="opacity-85 text-blue-500 bg-blue-500" src="assets/dot.svg" alt="">
 		<div id="hero_info"
 			class="hero_title w-[350px] md:w-[550px] lg:w-[1145px] absolute flex flex-col justify-center items-center text-center text-white-500">
 			<h1 class="lg:text-[78px] md:text-[40px] text-[30px]">The WPPOOL Index</h1>
@@ -139,7 +140,7 @@
 			<div
 				class="w-full lg:w-[200px] drop-shadow-lg h-[36px] bg-blue-500  rounded-md px-4 mt-2 flex  justify-between items-center">
 				<p class="!text-white-400">The Index</p>
-				<img class="w-[3.84px] h-[0.96px]" src="../assets/icons/-.png" alt="">
+				<img class="w-[3.84px] h-[0.96px]" src="assets/icons/-.png" alt="">
 			</div>
 			<div class="w-full lg:w-[200px] h-[36px]  rounded-md px-4 flex justify-between items-center">
 				<p class="text-white-20">The Index Tab Two</p>
@@ -184,7 +185,7 @@
 					<div id="index_overview" class="grid lg:grid-cols-4  gap-4 lg:gap-0">
 						<div id="overview"
 							class=" lg:w-[230px] h-[50px] grid grid-cols-3 bg-white-400 items-center px-2 rounded-md">
-							<h1 class="col-span-1 text-[#FC714D] text-[30px]">+66.2%</h1>
+							<h2 id="overview_title" class="col-span-1 text-[#FC714D] text-[30px]">+66.2%</h1>
 							<div class=" items-center col-span-2 flex justify-end border-r-4 border-[#FC714D] pr-2  ">
 								<div id="overviewOf" class=" grid justify-end items-center w-[55px] text-[12px] ">WPPOOL Index</div>
 							</div>
@@ -271,7 +272,7 @@
 						<th class=" gap-4">
 							<p class="flex items-center align-center">
 								Ticker
-								<img class="px-2" src="../assets/icons/arrow_drop_down.png" alt="">
+								<img class="px-2" src="assets/icons/arrow_drop_down.png" alt="">
 							</p>
 						</th>
 						<th>Vertical</th>
@@ -451,34 +452,34 @@
 		</div>
 		<div class="future_list pt-4  lg:pr-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px]">
 			<div class="list_card">
-				<img id="card_img" src="../assets/company/strip.png" alt="">
+				<img id="card_img" src="assets/company/strip.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/klarna.png" alt="">
+				<img class="" src="assets/company/klarna.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/plaid.png" alt="">
+				<img class="" src="assets/company/plaid.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/checkout.png" alt="">
+				<img class="" src="assets/company/checkout.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/revolut.png" alt="">
+				<img class="" src="assets/company/revolut.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/chime.png" alt="">
+				<img class="" src="assets/company/chime.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/n26.png" alt="">
+				<img class="" src="assets/company/n26.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/brex.png" alt="">
+				<img class="" src="assets/company/brex.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/deel.png" alt="">
+				<img class="" src="assets/company/deel.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/gusto.png" alt="">
+				<img class="" src="assets/company/gusto.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -496,14 +497,14 @@
 			</button>
 			<p id="section_subtitle">Click through the slides or download the report to view natively on your device.</p>
 		</div>
-		<img class="absolute top-32 md:top-0 lg:top-0 right-[5%]" src="../assets/icons/usaHologram.png" alt="">
+		<img class="absolute top-32 md:top-0 lg:top-0 right-[5%]" src="assets/icons/usaHologram.png" alt="">
 		<div id="slider" class="lg:pl-[60px]  h-[80vh] lg:h-fit">
 			<div id="image-slider" class="splide absolute h-fit pb-6 lg:mr-[-35%] overflow-hidden ">
 				<div class="splide__track">
 					<ul class="splide__list">
-						<li class="splide__slide"><img src="../assets/rgegdg.png" alt="Slide 1"></li>
-						<li class="splide__slide"><img src="../assets/rhrdgd.png" alt="Slide 2"></li>
-						<li class="splide__slide"><img src="../assets/dehjtfgd.png" alt="Slide 3"></li>
+						<li class="splide__slide"><img src="assets/rgegdg.png" alt="Slide 1"></li>
+						<li class="splide__slide"><img src="assets/rhrdgd.png" alt="Slide 2"></li>
+						<li class="splide__slide"><img src="assets/dehjtfgd.png" alt="Slide 3"></li>
 					</ul>
 				</div>
 			</div>
@@ -527,7 +528,7 @@
 		</div>
 		<div class="storie_list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 lg:gap-20 py-20 lg:pr-32  ">
 			<div id="stories" class="">
-				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<img id="avatar" src="assets/persons/image 97.png" alt="">
 				<div id="avatar_info">
 					<h5>By: Sahabuddin Sagor</h5>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
@@ -537,7 +538,7 @@
 				</div>
 			</div>
 			<div id="stories" class="">
-				<img id="avatar" src="../assets/persons/image 98.png" alt="">
+				<img id="avatar" src="assets/persons/image 98.png" alt="">
 				<div id="avatar_info">
 					<h5>By: Nayem Khan</h5>
 					<p>Lorem ipsum dolor sit amet </p>
@@ -547,9 +548,9 @@
 				</div>
 			</div>
 			<div id="stories" class="">
-				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<img id="avatar" src="assets/persons/image 97.png" alt="">
 				<div id="avatar2">
-					<img src="../assets/persons/image 100.png" alt="">
+					<img src="assets/persons/image 100.png" alt="">
 				</div>
 				<div id="avatar_info">
 					<h5>By: Sahabuddin Sagor</h5>
@@ -560,7 +561,7 @@
 				</div>
 			</div>
 			<div id="stories" class="">
-				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<img id="avatar" src="assets/persons/image 97.png" alt="">
 				<div id="avatar_info">
 					<h5>By: Sahabuddin Sagor</h5>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
@@ -570,7 +571,7 @@
 				</div>
 			</div>
 			<div id="stories" class="">
-				<img id="avatar" src="../assets/persons/image 98.png" alt="">
+				<img id="avatar" src="assets/persons/image 98.png" alt="">
 				<div id="avatar_info">
 					<h5>By: Nayem Khan</h5>
 					<p>Lorem ipsum dolor sit amet.</p>
@@ -580,9 +581,9 @@
 				</div>
 			</div>
 			<div id="stories" class="">
-				<img id="avatar" src="../assets/persons/image 97.png" alt="">
+				<img id="avatar" src="assets/persons/image 97.png" alt="">
 				<div id="avatar2">
-					<img src="../assets/persons/image 100.png" alt="">
+					<img src="assets/persons/image 100.png" alt="">
 				</div>
 
 				<div id="avatar_info">
@@ -612,7 +613,7 @@
 							WPPOOL</button>
 					</div>
 				</div>
-				<img class="w-[523px] h-[250px] md:h-[340px] lg:h-[340px] md:ml-20" src="../assets/about_wppool.png" alt="">
+				<img class="w-[523px] h-[250px] md:h-[340px] lg:h-[340px] md:ml-20" src="assets/about_wppool.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -622,64 +623,64 @@
 		<h5 id="section_title" class="lg:mb-8">Selected WPPOOL Portfolio Companies</h5>
 		<div class="portfolio_companies pt-4  lg:pr-16 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[20px]">
 			<div class="list_card">
-				<img id="card_img" src="../assets/company/alibaba.png" alt="">
+				<img id="card_img" src="assets/company/alibaba.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/vendr.png" alt="">
+				<img class="" src="assets/company/vendr.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/vestwell.png" alt="">
+				<img class="" src="assets/company/vestwell.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/snapdocs.png" alt="">
+				<img class="" src="assets/company/snapdocs.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/vendr.png" alt="">
+				<img class="" src="assets/company/vendr.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/snapdocs.png" alt="">
+				<img class="" src="assets/company/snapdocs.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/toast.png" alt="">
+				<img class="" src="assets/company/toast.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/connepay.png" alt="">
+				<img class="" src="assets/company/connepay.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/connepay.png" alt="">
+				<img class="" src="assets/company/connepay.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/mineralltee.png" alt="">
+				<img class="" src="assets/company/mineralltee.png" alt="">
 			</div>
 			<div class="list_card">
-				<img id="card_img" src="../assets/company/flywire.png" alt="">
+				<img id="card_img" src="assets/company/flywire.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/quovo_logo.png" alt="">
+				<img class="" src="assets/company/quovo_logo.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/Vector.png" alt="">
+				<img class="" src="assets/company/Vector.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/nota_bene_logo 1.png" alt="">
+				<img class="" src="assets/company/nota_bene_logo 1.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/Recurly_Logo_Purple 1.png" alt="">
+				<img class="" src="assets/company/Recurly_Logo_Purple 1.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/Group 169.png" alt="">
+				<img class="" src="assets/company/Group 169.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/toast.png" alt="">
+				<img class="" src="assets/company/toast.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/advisor.png" alt="">
+				<img class="" src="assets/company/advisor.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/argyle-black-l 2.png" alt="">
+				<img class="" src="assets/company/argyle-black-l 2.png" alt="">
 			</div>
 			<div class="list_card">
-				<img class="" src="../assets/company/ss-logo-2color-black 1.png" alt="">
+				<img class="" src="assets/company/ss-logo-2color-black 1.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -740,8 +741,8 @@
 						Colorado - 97392, Bhutan</p>
 				</div>
 				<div id="social_url" class="pt-5 flex gap-5">
-					<img src="../assets/icons/linkedin.png" alt="">
-					<img src="../assets/icons/twitter.png" alt="">
+					<img src="assets/icons/linkedin.png" alt="">
+					<img src="assets/icons/twitter.png" alt="">
 				</div>
 			</div>
 
@@ -752,8 +753,8 @@
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
-	<script src="../Javascript/chart.js"></script>
-	<script src="../Javascript/main.js"></script>
+	<script src="Javascript/chart.js"></script>
+	<script src="Javascript/main.js"></script>
 </body>
 
 </html>

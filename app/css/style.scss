@@ -4,12 +4,14 @@
 
 // ===============Universell Style =============
 
-body,
-html {
+body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	// font-family: $Nantes400, $Messina400, $NeueW1G400;
 }
+
+
 
 .section{
 	height: auto !important;
@@ -205,13 +207,14 @@ html {
 }
 
 #index_overview{
-	h1{
-		font-size: $Nantes400;
-	}
 	#overviewOf{
 		font-family: $Messina400;
 		line-height: normal;
 	}
+}
+
+#overview_title{
+	font-size: $Nantes400 !important;
 }
 
 
@@ -226,7 +229,7 @@ html {
 		}
 
 		#search {
-			background-image: url('../assets/icons/search.png');
+			background-image: url('assets/icons/search.png');
 			background-repeat: no-repeat;
 			background-position: 20px center;
 			padding-left: 50px;

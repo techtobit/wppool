@@ -4,7 +4,6 @@ const close_MenuBtn = document.getElementById('close_toggol_menu');
 const menu = document.getElementById('menuList');
 
 openMenuBtn.addEventListener('click', () => {
-  console.log('cl');
   menu.classList.add('visible');
 });
 close_MenuBtn.addEventListener('click', () => {
@@ -37,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // quick navigaotr btn 
   const quickNavBtn = document.getElementById('quck_nav_btn');
   const heroSection = document.getElementById('hero');
   const footerSection = document.getElementById('footer');
@@ -63,6 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+
+  // Main nav bar
 
   const navbar = document.getElementById('navbar');
   const downloadBtn = document.getElementById('download_btn')

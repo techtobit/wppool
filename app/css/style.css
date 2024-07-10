@@ -17,37 +17,36 @@
 
 @font-face {
   font-family: "NantesRegular";
-  src: url("../assets/fonts/Nantes/Nantes-Regular.woff2") format("woff2");
+  src: url("assets/fonts/Nantes/Nantes-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MessinaSansRegular";
-  src: url("../assets/fonts/MessinaSans/MessinaSans-Regular.woff2") format("woff2");
+  src: url("assets/fonts/MessinaSans/MessinaSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MessinaSansBold";
-  src: url("../assets/fonts/MessinaSans/MessinaSans-Bold.woff2") format("woff2");
+  src: url("assets/fonts/MessinaSans/MessinaSans-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "MessinaSansLight";
-  src: url("../assets/fonts/MessinaSans/MessinaSans-Light.woff2") format("woff2");
+  src: url("assets/fonts/MessinaSans/MessinaSans-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "NeueHaasUnicaW1G";
-  src: url("../assets/fonts/NeueHaas/Neue-Haas-Unica-W1G.woff2") format("woff2");
+  src: url("assets/fonts/NeueHaas/Neue-Haas-Unica-W1G.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
-body,
-html {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -197,7 +196,7 @@ html {
 }
 
 #index_overview h1 {
-  font-size: NantesRegular;
+  font-size: NantesRegular !important;
 }
 #index_overview #overviewOf {
   font-family: MessinaSansRegular;
@@ -209,7 +208,7 @@ html {
   font-family: NantesRegular;
 }
 #wppool_index .section_header #search {
-  background-image: url("../assets/icons/search.png");
+  background-image: url("assets/icons/search.png");
   background-repeat: no-repeat;
   background-position: 20px center;
   padding-left: 50px;
