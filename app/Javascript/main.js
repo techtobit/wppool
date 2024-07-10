@@ -37,6 +37,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  const quickNavBtn = document.getElementById('quck_nav_btn');
+  const heroSection = document.getElementById('hero');
+  const footerSection = document.getElementById('footer');
+
+
+  quickNavBtn.addEventListener('click', function () {
+    if (window.scrollY < heroSection.clientHeight) {
+      footerSection.scrollIntoView({ behavior: 'smooth' });
+      
+    } else {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  window.addEventListener('scroll', function () {
+    if (window.scrollY + window.innerHeight >= document.body.scrollHeight-899) {
+      quickNavBtn.classList.add('up');
+      quickNavBtn.style.transform = 'rotate(90deg)';
+      
+    } else {
+      quickNavBtn.classList.remove('up');
+      quickNavBtn.style.transform = 'rotate(-90deg)';
+      
+    }
+  });
+
+
   const navbar = document.getElementById('navbar');
   const downloadBtn = document.getElementById('download_btn')
   const shareBtn = document.getElementById('share_btn')
